@@ -1,10 +1,20 @@
-<% if (disable) { %>
+<% if (disable && about) { %>
     <button class="button-about-ui-kit button-about-ui-kit-disabled d-flex justify-content-center align-items-center">
         Подробнее
     </button>  
-<% } else { %>
+<% } else if(about){ %>
     <button class="button-hover button-about-ui-kit d-flex justify-content-center align-items-center">
         Подробнее
+    </button>  
+<% } %>
+
+<% if (disable && !about) { %>
+    <button class="button-meeting-ui-kit button-about-ui-kit-disabled d-flex justify-content-center align-items-center">
+        Записаться на прием
+    </button>  
+<% } else if(!about){ %>
+    <button class="button-hover button-meeting-ui-kit d-flex justify-content-center align-items-center">
+        Записаться на прием
     </button>  
 <% } %>
 
@@ -21,6 +31,21 @@
 </script>
 
 <style>
+    .button-meeting-ui-kit{
+        color: var(--d-9-d-9-d-9, white);
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 233px;
+        width: 100%;
+        height: 50px;
+        background: #3A7E7F;
+        border: 1px solid #3A7E7F;
+        border-radius: 10px;
+    }
+
     .button-about-ui-kit{
         color: var(--d-9-d-9-d-9, #3A7E7F);
         font-family: Commissioner;

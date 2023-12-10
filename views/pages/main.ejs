@@ -8,10 +8,12 @@
     <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'right' }) %>
     <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'left' }) %>
     <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'disabled' }) %>
-    <%- include('../partials/ui-kit/buttonAbout', { disable: false }) %>
-    <%- include('../partials/ui-kit/buttonAbout', { disable: true }) %>
-    <%- include('../partials/ui-kit/buttonMeeting', { link: "https://google.com" }) %>
-    <%- include('../partials/ui-kit/readMore', { link: "https://google.com" }) %>
+    <%- include('../partials/ui-kit/buttonAbout', { disable: false, about: true }) %>
+    <%- include('../partials/ui-kit/buttonAbout', { disable: true,  about: true}) %>
+    <%- include('../partials/ui-kit/buttonAbout', { disable: false, about: false }) %>
+    <%- include('../partials/ui-kit/buttonAbout', { disable: true,  about: false}) %>
+    <%- include('../partials/ui-kit/readMore', { disable: false }) %>
+    <%- include('../partials/ui-kit/readMore', { disable: true }) %>
     <%- include('../partials/ui-kit/social', { link: "https://google.com" }) %>
     <%- include('../partials/ui-kit/termsLink', { link: "https://google.com" }) %>
 </main>
