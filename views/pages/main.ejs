@@ -14,9 +14,24 @@
     <%- include('../partials/ui-kit/buttonAbout', { disable: true,  about: false}) %>
     <%- include('../partials/ui-kit/readMore', { disable: false }) %>
     <%- include('../partials/ui-kit/readMore', { disable: true }) %>
-    <%- include('../partials/ui-kit/social', { link: "https://google.com" }) %>
+    <%- include('../partials/ui-kit/social', { disable: false }) %>
+    <%- include('../partials/ui-kit/social', { disable: true }) %>
+    
     <%- include('../partials/ui-kit/termsLink', { link: "https://google.com" }) %>
 </main>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const disabled = document.querySelectorAll('.disabled-ui-kit');
+        disabled.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            }, true);
+        });
+    });
+</script>
 
 </body>
 </html>

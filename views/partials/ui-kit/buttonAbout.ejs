@@ -1,5 +1,5 @@
 <% if (disable && about) { %>
-    <button class="button-about-ui-kit button-about-ui-kit-disabled d-flex justify-content-center align-items-center">
+    <button class="button-about-ui-kit button-about-ui-kit-disabled disabled-ui-kit d-flex justify-content-center align-items-center">
         Подробнее
     </button>  
 <% } else if(about){ %>
@@ -18,17 +18,6 @@
     </button>  
 <% } %>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const disabled = document.querySelectorAll('.button-about-ui-kit-disabled');
-        disabled.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-            }, true);
-        });
-    });
-</script>
 
 <style>
     .button-meeting-ui-kit{
