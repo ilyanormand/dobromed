@@ -5,8 +5,11 @@
     <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: 'doctors'}) %>
     <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: 'yandex'}) %>
     <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: '2gis'}) %>
-    <%- include('../partials/ui-kit/arrowButton', { link: "https://google.com" }) %>
-    <%- include('../partials/ui-kit/buttonAbout', { link: "https://google.com" }) %>
+    <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'right' }) %>
+    <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'left' }) %>
+    <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'disabled' }) %>
+    <%- include('../partials/ui-kit/buttonAbout', { disable: false }) %>
+    <%- include('../partials/ui-kit/buttonAbout', { disable: true }) %>
     <%- include('../partials/ui-kit/buttonMeeting', { link: "https://google.com" }) %>
     <%- include('../partials/ui-kit/readMore', { link: "https://google.com" }) %>
     <%- include('../partials/ui-kit/social', { link: "https://google.com" }) %>

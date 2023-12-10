@@ -1,0 +1,47 @@
+<% if (disable) { %>
+    <button class="button-about-ui-kit button-about-ui-kit-disabled d-flex justify-content-center align-items-center">
+        Подробнее
+    </button>  
+<% } else { %>
+    <button class="button-hover button-about-ui-kit d-flex justify-content-center align-items-center">
+        Подробнее
+    </button>  
+<% } %>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const disabled = document.querySelectorAll('.button-about-ui-kit-disabled');
+        disabled.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            }, true);
+        });
+    });
+</script>
+
+<style>
+    .button-about-ui-kit{
+        color: var(--d-9-d-9-d-9, #3A7E7F);
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 178px;
+        width: 100%;
+        height: 50px;
+        background: none;
+        border: 1px solid #1C5051;
+        border-radius: 10px;
+    }
+
+    .button-hover:hover{
+        background-color: #1C5051;
+        color: white;
+    }
+
+    .button-about-ui-kit-disabled{
+        opacity: 0.5;
+    }
+</style>
