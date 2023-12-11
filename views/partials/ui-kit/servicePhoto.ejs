@@ -1,0 +1,25 @@
+<% if (type === 'image') { %>
+    <div class="card-service-photo-ui-kit" style="background-image: url('<%= imageUrl %>');">
+        
+    </div>  
+<% } else if (type === 'video') { %>
+    <div class="card-service-photo-ui-kit" style="background-image: url('<%= imageUrl %>');">
+        
+    </div> 
+<% } else if (type === 'pdf') { %>
+    <div class="card-service-photo-ui-kit" style="background-image: url('<%= imageUrl %>'); height: 518px;">
+
+    </div>
+<% } %>
+
+
+<style>
+    .card-service-photo-ui-kit{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 366px;
+        height: 366px;
+        color: white;
+        border-radius: 10px;
+    }
+</style>
