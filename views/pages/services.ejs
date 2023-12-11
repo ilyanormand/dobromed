@@ -11,8 +11,182 @@
       crossorigin="anonymous" />
   </head>
   <body>
-    <%- include('../partials/header') %> <%- include('../partials/banner') %> <%-
-    include('../partials/textBlock') %>
+    <div class="container">
+      <%- include('../partials/header') %>
+      <div class="banner mt-5">
+        <div class="row">
+          <div class="col-md-6 col-xl-3"><h1 class="banner__title mb-4">Ботокс в лоб</h1></div>
+        </div>
+        <img src="../assets/images/banner.png" class="banner-image rounded-3" alt="Banner Image" />
+      </div>
+      <div class="text-block">
+        <div class="row">
+          <div class="col-12">
+            <h6 class="title mt-5">Заголовок</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7">
+            <p class="text">
+              Появление крупных межбровных морщин делает выражение лица тяжелым и напряженным.
+              Избавиться от неприятной складки поможет введение ботокса в лоб. Опыт наших
+              специалистов позволяет решать проблему за одно посещение, при этом окружающие мышцы не
+              вовлекаются, а мимика не нарушается.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-2">
+            <h6 class="title">Заголовок</h6>
+          </div>
+        </div>
+        <ol class="ps-3 mb-4 mt-1">
+          <li>Пункт важный мега важный супер важный</li>
+          <li>Пункт важный мега важный супер важный</li>
+          <li>Пункт важный мега важный супер важный</li>
+        </ol>
+        <div class="row">
+          <div class="col-7">
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h6 class="title mt-4">Заголовок</h6>
+          </div>
+        </div>
+        <ul class="ps-3 mb-2 mt-1 custom-color">
+          <li>Пункт важный мега важный супер важный</li>
+          <li>Пункт важный мега важный супер важный</li>
+          <li>
+            Пункт важный мега важный супер важный
+            <ul class="custom-color">
+              <li>Подпункт второго уровня</li>
+            </ul>
+          </li>
+          <li>Пункт важный мега важный супер важный</li>
+        </ul>
+        <p class="mb-4 mt-4">
+          Можно вставить
+          <a href="">ссылку</a>
+          прямо в текст и тыкнуть на нее и перейти куда-то.
+        </p>
+        <blockquote>
+          <p>Это крутая цитата</p>
+        </blockquote>
+        <div class="row">
+          <div class="col-12">
+            <h6 class="title mt-3">Таблица</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7">
+            <div class="table-container mb-5">
+              <table class="table m-0">
+                <thead class="rounded-top">
+                  <tr class="table-color">
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                    <th>Заголовок 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Описание описание</td>
+                    <td>Описание описание</td>
+                    <td>Описание описание</td>
+                  </tr>
+                  <tr>
+                    <td>Описание описание</td>
+                    <td>Описание описание</td>
+                    <td>Описание описание</td>
+                  </tr>
+                  <tr class="table__bottom">
+                    <td>Описание описание</td>
+                    <td>Описание описание</td>
+                    <td>Описание описание</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .banner__title {
+        color: var(--d-9-d-9-d-9, #113b47);
+        font-family: Tenor Sans;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+      img {
+        width: 100%;
+      }
+      .title {
+        color: var(--d-9-d-9-d-9, #232323);
+        font-family: Commissioner;
+        font-weight: 600;
+      }
+      .text {
+        color: var(--d-9-d-9-d-9, #232323);
+        font-family: Commissioner;
+        font-weight: 300;
+      }
+      .custom-color li::marker {
+        color: var(--d-9-d-9-d-9, #3a7e7f);
+      }
+      .custom-color {
+        list-style-type: disc;
+      }
+      a {
+        color: #3a7e7f;
+      }
+      blockquote {
+        position: relative;
+        padding-left: 20px;
+      }
+      blockquote::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: #3a7e7f;
+        border-radius: 10px;
+      }
+      .table-container {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #3a7e7f;
+        border-bottom: 0;
+      }
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .table th,
+      .table td {
+        border: 1px solid #3a7e7f;
+        padding: 8px;
+      }
+      .table th {
+        background: var(--f-3-fdfe, #f3fdfe);
+        font-weight: bold;
+        border-top: 0;
+      }
+      .table td:last-child,
+      .table th:last-child {
+        border-right: 0;
+      }
+      .table td:first-child,
+      .table th:first-child {
+        border-left: 0;
+        border-top: 0;
+      }
+    </style>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
