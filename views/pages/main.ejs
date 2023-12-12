@@ -1,30 +1,6 @@
 <%- include('../partials/header') %>
 
 <main>
-    <!-- <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: 'google'}) %>
-    <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: 'doctors'}) %>
-    <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: 'yandex'}) %>
-    <%- include('../partials/ui-kit/additionalLink', { link: "https://google.com", iconType: '2gis'}) %>
-    <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'right' }) %>
-    <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'left' }) %>
-    <%- include('../partials/ui-kit/arrowButton', { arrowDirection: 'disabled' }) %>
-    <%- include('../partials/ui-kit/buttonAbout', { disable: false, about: true }) %>
-    <%- include('../partials/ui-kit/buttonAbout', { disable: true,  about: true}) %>
-    <%- include('../partials/ui-kit/buttonAbout', { disable: false, about: false }) %>
-    <%- include('../partials/ui-kit/buttonAbout', { disable: true,  about: false}) %>
-    <%- include('../partials/ui-kit/readMore', { disable: false, link:"https://google.com"  }) %>
-    <%- include('../partials/ui-kit/readMore', { disable: true, link:"https://google.com" }) %>
-    <%- include('../partials/ui-kit/social', { disable: false }) %>
-    <%- include('../partials/ui-kit/social', { disable: true }) %>
-    <%- include('../partials/ui-kit/cardService',{link:"https://google.com"}) %>
-    <%- include('../partials/ui-kit/cardDoctor', {}) %>
-    <%- include('../partials/ui-kit/logo',{color:""}) %>
-    <%- include('../partials/ui-kit/servicePhoto',{type:"image", imageUrl:'/assets/images/servicePhoto1.png'}) %>
-    <%- include('../partials/ui-kit/servicePhoto',{type:"video", imageUrl:'/assets/images/servicePhoto2.png'}) %>
-    <%- include('../partials/ui-kit/servicePhoto',{type:"pdf", imageUrl:'/assets/images/servicePhoto3.png'} ) %> -->
-
-
-
     <div class="container-fluidd">
         <%- include('../partials/main/presentation', {}) %>
     </div>
@@ -219,18 +195,7 @@
 </style>
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const disabled = document.querySelectorAll('.disabled-ui-kit');
-        disabled.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-            }, true);
-        });
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-</body>
+
+<%- include('../partials/footer') %>
 </html>
