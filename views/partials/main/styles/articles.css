@@ -1,5 +1,4 @@
-.actions-title{
-    padding-top: 145px;
+.articles-title{
     color: var(--d-9-d-9-d-9, #113B47);
     font-family: Tenor Sans;
     font-size: 50px;
@@ -8,4 +7,3 @@
     line-height: normal;
     text-transform: uppercase; 
 }
-

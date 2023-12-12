@@ -6,6 +6,16 @@
     border-radius: 10px;
 }
 
+.card-actions-ui-kit .button-about-ui-kit{
+    width: 100%;
+    max-width: 350px;
+}
+.card-actions-ui-kit .button-meeting-ui-kit{
+    width: 100%;
+    max-width: 350px;
+}
+
+
 .card-actions-ui-kit-short{
     position: relative;
     width: 100%;

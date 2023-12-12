@@ -1,0 +1,66 @@
+.card-articles-ui-kit{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    color: white;
+    border: none;
+}
+
+.card-articles-body{
+    border: 1px solid var(--d-9-d-9-d-9, #3A7E7F);
+    border-top: none;
+    border-bottom-left-radius: 10px; /* Радиус скругления */
+    border-bottom-right-radius: 10px; /* Радиус скругления */
+}
+
+
+.card-articles-image-ui-kit{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-image: url('../../../assets/images/actions1.png');
+    background-position: 0% 20% 10%;
+    border-top-left-radius: 50% 50%; /* Радиус скругления */
+    border-top-right-radius: 50% 50%; /* Радиус скругления */
+}
+
+.card-articles-image-ui-kit-short{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url('../../../assets/images/actions1.png');
+    background-position: 0% 20% 10%;
+    border-bottom-left-radius: 50% 30%; /* Радиус скругления */
+    border-bottom-right-radius: 50% 30%; /* Радиус скругления */
+}
+
+
+
+.card-articles-text-ui-kit h5{
+    color: var(--d-9-d-9-d-9, #3A7E7F);
+    font-family: Tenor Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+.card-articles-text-ui-kit p{
+    color: #232323;
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+
+.article-time-post{
+    color: #676767;
+    text-align: center;
+    font-family: Commissioner;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 16.9px */ 
+}
