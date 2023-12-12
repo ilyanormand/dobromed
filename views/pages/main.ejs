@@ -65,12 +65,39 @@
     </div>
 
     <div class="container specialists">
-        <%- include('../partials/main/specialists', {disable: false, about: false}) %>
+        <%- include('../partials/main/specialists', {}) %>
     </div>
 
-    <div class="container">
-        
+    <div class="container reviews">
+        <%- include('../partials/main/reviews', {}) %>
     </div>
+    <div class="container-fluidd main-form-background">
+        <div class="container main-form">
+            <div class="row w-50">
+                <div class="col-12">
+                    <div class="main-form-title text-uppercase">
+                        Поможем с выбором услуги
+                    </div>
+                    <div class="main-form-inputs d-flex flex-column mt-4">
+                        <input type="text" placeholder="Имя">
+                        <input class="mt-2" type="text" placeholder="Номер Телефона">
+                    </div>
+                    <div class="main-form-contact mt-4">
+                        <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
+                    </div>
+                    <div class="main-form-alert">
+                        <p>
+                            Нажимая кнопку “Перезвоните мне”, вы соглашаетесь c политикой обработки персональных данных. 
+                        </p>
+                    </div>
+                    <div class="main-form-sended">
+                        Форма отправлена!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 </main>
 
@@ -125,6 +152,68 @@
 
     .populars{
         margin-top: 145px;
+    }
+
+    .reviews{
+        margin-top: 145px;
+    }
+
+    .main-form-background{
+        margin-top: 125px;
+        height: 1000px;
+        background: url('../assets/images//plastic-surgery.png');
+        background-repeat: no-repeat;
+        background: cover;
+        background-position: center;
+        transform:scaleX(-1);
+        border-top-left-radius: 60% 20%; /* Радиус скругления */
+        border-top-right-radius: 60% 20%; /* Радиус скругления */
+        background-size: 2000px;
+    }
+
+    .main-form{
+        transform:scaleX(-1);
+        padding-top: 250px;
+    }
+
+    .main-form-title{
+        color: var(--d-9-d-9-d-9, #113B47);
+        font-family: Tenor Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 54.9px; /* 137.25% */
+        text-transform: uppercase; 
+    }
+
+    .main-form-sended{
+        color: var(--d-9-d-9-d-9, #113B47);
+        font-family: Tenor Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 54.9px; /* 183% */
+        text-transform: uppercase;
+        margin-top: 38px; 
+    }
+
+    .main-form-alert{
+        color: var(--d-9-d-9-d-9, #232323);
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 28px;  
+    }
+
+    .main-form-inputs input{
+        width: 450px;
+        padding: 5px;
+        padding-left: 25px;
+        height: 55px;
+        border-radius: 10px;
+        border: 1px solid var(--d-9-d-9-d-9, #3A7E7F); 
     }
 
 </style>
