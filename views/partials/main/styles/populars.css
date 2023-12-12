@@ -2,11 +2,21 @@
     background: none; 
     color: inherit; 
     border: none;
+    opacity: 1;
+}
+
+.carousel-control-prev{
+    background: none; 
+    color: inherit; 
+    border: none;
+    opacity: 1;
+    margin-left: -20px;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
     background: none; 
     color: inherit;
+    opacity: 1;
 }
 
 .populars-title{
@@ -20,3 +30,14 @@
     line-height: normal;
     text-transform: uppercase; 
 }
+.populars-buttons{
+    margin-top: 20px;
+   justify-content: space-between;
+   width: 96%;
+}
+
+.populars-buttons button{
+    width: 49%;
+}
+
+
