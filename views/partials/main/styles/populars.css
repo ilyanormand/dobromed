@@ -1,0 +1,22 @@
+.carousel-control-prev, .carousel-control-next {
+    background: none; 
+    color: inherit; 
+    border: none;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background: none; 
+    color: inherit;
+}
+
+.populars-title{
+    margin: 0 auto;
+    width: 90%;
+    color: var(--d-9-d-9-d-9, #113B47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
