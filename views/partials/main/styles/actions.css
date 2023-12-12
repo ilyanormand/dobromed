@@ -1,0 +1,21 @@
+.actions-title{
+    padding-top: 145px;
+    color: var(--d-9-d-9-d-9, #113B47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+
+
+.button-about-ui-kit{
+    width: 100%;
+    max-width: 285px;
+}
+.button-meeting-ui-kit{
+    width: 100%;
+    max-width: 285px;
+}

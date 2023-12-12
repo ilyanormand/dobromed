@@ -1,0 +1,60 @@
+.card-actions-ui-kit{
+    position: relative;
+    width: 100%;
+    height: 780px;
+    color: white;
+    border-radius: 10px;
+}
+
+.card-actions-ui-kit-short{
+    position: relative;
+    width: 100%;
+    height: 382px;
+    color: white;
+    border-radius: 10px;
+}
+
+.card-actions-image-ui-kit{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url('../../../assets/images/actions1.png');
+    background-position: 0% 20% 10%;
+    border-bottom-left-radius: 50% 20%; /* Радиус скругления */
+    border-bottom-right-radius: 50% 20%; /* Радиус скругления */
+}
+
+.card-actions-image-ui-kit-short{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url('../../../assets/images/actions1.png');
+    background-position: 0% 20% 10%;
+    border-bottom-left-radius: 50% 30%; /* Радиус скругления */
+    border-bottom-right-radius: 50% 30%; /* Радиус скругления */
+}
+
+
+
+.card-actions-text-ui-kit h5{
+    color: var(--d-9-d-9-d-9, #3A7E7F);
+    font-family: Tenor Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+.card-actions-text-ui-kit p{
+    color: var(--d-9-d-9-d-9, #232323);
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+
+.card-actions-description-ui-kit{
+    
+}
