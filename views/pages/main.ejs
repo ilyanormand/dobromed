@@ -49,6 +49,21 @@
         </div>
     </div>
 
+    <div class="container certification">
+        <div class="row certificate-box">
+            <div class="col-6 certificate-title">
+                <h1>Сертификат</h1>
+                <div class="mt-4">
+                    <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
+                </div>
+            </div>
+            <div class="col-6 cerficate-description">
+                <p>Подарите близкому человеку возможность позаботиться о своем здоровье и красоте.</p>
+                <p>Сертификат распростроняется на все виды услуг</p>
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <style>
@@ -62,6 +77,38 @@
     .articles{
         margin-top: 145px;
         padding-bottom: 100px;
+    }
+
+    .certification{
+        margin-top: 126px;
+        height: 411px;
+    }
+
+    .certificate-box{
+        margin-top: 115px;   
+    }
+
+    .certificate-title h1{
+        color: var(--d-9-d-9-d-9, #113B47);
+        font-family: Tenor Sans;
+        font-size: 68px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase; 
+    }
+    .cerficate-description{
+        color: #232323;
+        font-family: Commissioner;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 31.9px; /* 132.917% */ 
+    }
+    
+
+    .certificate-title button{
+        max-width: 315px; 
     }
 
     .services-clinic{
