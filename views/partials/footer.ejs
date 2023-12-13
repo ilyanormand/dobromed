@@ -125,4 +125,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 </script>
+
+<script>
+    
+    window.onscroll = function() {
+        const headerContent = document.getElementById('contact-info-box-header');
+        const header = document.getElementById('header');
+        const navLogo = document.getElementById('nav-logo-box');
+        const navLogoFixed = document.getElementById('header-fixed-logo');
+        if (window.pageYOffset > 100) {
+            // Скрываем часть контента
+            headerContent.style.display = 'none';
+            header.classList.add("header-fixed");
+            navLogo.style.display = 'none';
+            navLogoFixed.style.display = 'flex'
+        } else {
+            // Отображаем контент снова
+            headerContent.style.display = 'block';
+            header.classList.remove("header-fixed");
+            navLogo.style.display = 'flex';
+            navLogoFixed.style.display = 'none'
+        }
+    };
+</script>
 </body>
