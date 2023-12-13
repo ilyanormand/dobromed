@@ -1,3 +1,10 @@
+.swiperReviews{
+    width: 105%;
+    max-width: 1200px;
+    overflow: hidden;
+    height: 400px;
+}
+
 .reviews-title{
     color: var(--d-9-d-9-d-9, #113B47);
     font-family: Tenor Sans;
@@ -8,16 +15,10 @@
     text-transform: uppercase; 
 }
 
-.reviews-slider .carousel-control-prev{
-
-}
-
-.reviews-slider .carousel-control-next{
-    
-}
 
 .card-review-ui-kit{
-    height: 351px;
+    height: 380px;
+    width: 268px;
     border-radius: 10px;
     border: 1px solid #3A7E7F; 
     margin: 0px 10px;

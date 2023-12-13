@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             direction: 'horizontal',
             loop: true,
             slidesPerView: 3,
-
+            spaceBetween: 40,
             autoplay: {
                 delay: 5000,
             },
@@ -101,6 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
             },
 
         });
+
+        const swiperReviews = new Swiper('.swiperReviews', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 5000,
+            },
+            
+    
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+
 
     });
 

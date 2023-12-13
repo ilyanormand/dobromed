@@ -1,40 +1,40 @@
-<a style="text-decoration: none;" href="" >
-    <div class="card card-doctor-ui-kit">
-        <div class="card-doctor-image-ui-kit">
-            <img class="img-fluid" src="../../assets/images/doctor1.png" alt="">
+
+<div class="card card-doctor-ui-kit">
+    <div class="card-doctor-image-ui-kit">
+        <img class="img-fluid" src="../../assets/images/doctor1.png" alt="">
+    </div>
+    <div class="card-doctor-description-ui-kit justify-content-center text-left align-items-center p-5">
+        <span>
+            Диагностика и лечение различных форм акне, розацеа, атопического дерматита, экземы, псориаз, грибковые поражения кожи и ногтей, вирусные дерматозы, заболевания волос и кожи волосистой части головы.
+        </span>
+    </div>
+    <div class="card-body d-flex flex-column justify-content-center text-center">
+        <div class="card-doctor-text-ui-kit">
+            <h5>ПОНИЧ ЕВГЕНИЙ СТЕПАНОВИЧ</h5>
+            <p>Дерматолог</p>
         </div>
-        <div class="card-doctor-description-ui-kit justify-content-center text-left align-items-center p-5">
-            <span>
-                Диагностика и лечение различных форм акне, розацеа, атопического дерматита, экземы, псориаз, грибковые поражения кожи и ногтей, вирусные дерматозы, заболевания волос и кожи волосистой части головы.
-            </span>
-        </div>
-        <div class="card-body d-flex flex-column justify-content-center text-center">
-            <div class="card-doctor-text-ui-kit">
-                <h5>ПОНИЧ ЕВГЕНИЙ СТЕПАНОВИЧ</h5>
-                <p>Дерматолог</p>
+        <div class="card-doctor-buttons-ui-kit">
+            <div class="text-center d-flex justify-content-center">
+                <%- include('../../partials/ui-kit/buttonAbout', { disable: false, about: true }) %>
             </div>
-            <div class="card-doctor-buttons-ui-kit">
-                <div class="text-center d-flex justify-content-center">
-                    <%- include('../../partials/ui-kit/buttonAbout', { disable: false, about: true }) %>
-                </div>
-                <div class="mt-2 text-center d-flex justify-content-center">
-                    <%- include('../../partials/ui-kit/buttonAbout', { disable: false, about: false }) %>
-                </div>
+            <div class="mt-2 text-center d-flex justify-content-center">
+                <%- include('../../partials/ui-kit/buttonAbout', { disable: false, about: false }) %>
             </div>
         </div>
     </div>
-</a>
+</div>
+
 <style>
     .card-doctor-ui-kit{
         position: relative;
-        width: 370px;
-        height: 630px;
+        width: 340px;
+        height: 600px;
         color: white;
         border-radius: 10px;
     }
 
     .card-doctor-image-ui-kit{
-        width: 368px;
+        width: 340px;
         height: 390px;
         position: relative;
         overflow: hidden;
@@ -103,11 +103,11 @@
         
     }
 
-    .button-about-ui-kit{
+    .card-doctor-buttons-ui-kit .button-about-ui-kit{
         width: 100%;
         max-width: 285px;
     }
-    .button-meeting-ui-kit{
+    .card-doctor-buttons-ui-kit .button-meeting-ui-kit{
         width: 100%;
         max-width: 285px;
     }
