@@ -1,91 +1,53 @@
-<div class="populars-title text-uppercase mb-4">
-    популярные процедуры
-</div>
-<div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Стрелки -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-        <%- include('../ui-kit/arrowButton', { arrowDirection: 'left' }) %>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-        <%- include('../ui-kit/arrowButton', { arrowDirection: 'right' }) %>
-    </button>
-    
-    <!-- Слайды -->
-    <div class="carousel-inner justify-content-center text center">
-        <div class="carousel-item active">
-            <div class="d-flex justify-content-center">
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
-                </div>
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
-                </div>
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
+
+<div class="container-swiper">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="service-clinic-block">
+                <%- include('../ui-kit/cardService', { link: "/" }) %>
+                <div class="populars-buttons d-flex">
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
                 </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
-                </div>
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
-                </div>
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-clinic-block">
+                <%- include('../ui-kit/cardService', { link: "/" }) %>
+                <div class="populars-buttons d-flex">
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
                 </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
-                </div>
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
-                </div>
-                <div class="service-clinic-block">
-                    <%- include('../ui-kit/cardService', { link: "/" }) %>
-                    <div class="populars-buttons d-flex">
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                        <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
-                    </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-clinic-block">
+                <%- include('../ui-kit/cardService', { link: "/" }) %>
+                <div class="populars-buttons d-flex">
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
                 </div>
             </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-clinic-block">
+                <%- include('../ui-kit/cardService', { link: "/" }) %>
+                <div class="populars-buttons d-flex">
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
+                    <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
+                </div>
+            </div>
+          </div>
         </div>
     </div>
+    <div class="swiper-button-prev" style="width: 65px; top:35%; left: -20px;">
+        <%- include('../ui-kit/arrowButton', { arrowDirection: 'left' }) %>
+    </div>
+    <div class="swiper-button-next" style="width: 65px; top:35%; right: -20px;">
+        <%- include('../ui-kit/arrowButton', { arrowDirection: 'right' }) %>
+    </div>
 </div>
+
+
