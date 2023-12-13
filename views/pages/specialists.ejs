@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>specialists</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+<body>
+  <%- include('../partials/header') %>
+  <div class="container"><div class="specialists">
+    <div class="license-title text-uppercase mb-4">
+      Специалисты
+  </div>
+  <div class="row">
+    <div class="col-xl-4">
+      <div class="service-clinic-block">
+        <%- include('../partials/ui-kit/cardDoctor', { link: "/" }) %>
+    </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="service-clinic-block">
+        <%- include('../partials/ui-kit/cardDoctor', { link: "/" }) %>
+    </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="service-clinic-block">
+        <%- include('../partials/ui-kit/cardDoctor', { link: "/" }) %>
+    </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="service-clinic-block">
+        <%- include('../partials/ui-kit/cardDoctor', { link: "/" }) %>
+    </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="service-clinic-block">
+        <%- include('../partials/ui-kit/cardDoctor', { link: "/" }) %>
+    </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="service-clinic-block">
+        <%- include('../partials/ui-kit/cardDoctor', { link: "/" }) %>
+    </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+</body>
+</html>
+
+<style>
+  .banner__title {
+    color: var(--d-9-d-9-d-9, #113b47);
+    font-family: Tenor Sans;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .text-block {
+    margin-bottom: 145px;
+  }
+
+  .title {
+    color: var(--d-9-d-9-d-9, #232323);
+    font-family: Commissioner;
+    font-weight: 600;
+  }
+
+  .text {
+    color: var(--d-9-d-9-d-9, #232323);
+    font-family: Commissioner;
+    font-weight: 300;
+  }
+
+  .custom-color li::marker {
+    color: var(--d-9-d-9-d-9, #3a7e7f);
+  }
+
+  .custom-color {
+    list-style-type: disc;
+  }
+
+  a {
+    color: #3a7e7f;
+  }
+
+  blockquote {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  blockquote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: #3a7e7f;
+    border-radius: 10px;
+  }
+
+  .table-container {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #3a7e7f;
+    border-bottom: 0;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .table th,
+  .table td {
+    border: 1px solid #3a7e7f;
+    padding: 8px;
+  }
+
+  .table th {
+    background: var(--f-3-fdfe, #f3fdfe);
+    font-weight: bold;
+    border-top: 0;
+  }
+
+  .table td:last-child,
+  .table th:last-child {
+    border-right: 0;
+  }
+
+  .table td:first-child,
+  .table th:first-child {
+    border-left: 0;
+    border-top: 0;
+  }
+
+  .card__item {
+    box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 10px;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plus {
+    width: 32px;
+    height: 32px;
+    background-color: #3a7e7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 17px 20px 21px 19px;
+  }
+
+  .howIt {
+    margin-bottom: 145px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .Avantages__card {
+    border: 1px solid var(--2, #3a7e7f);
+    background: var(--f-3-fdfe, #f3fdfe);
+  }
+  .photos {
+    margin-top: 145px;
+  }
+
+  .pirce {
+    margin-top: 145px;
+  }
+
+  .price-title {
+    color: var(--d-9-d-9-d-9, #113b47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .price-text {
+    margin-bottom: 25px;
+  }
+
+  .price-text-body {
+    display: block;
+    padding: 50px 100px;
+  }
+
+  .price-span {
+    margin-left: 41px;
+    color: var(--d-9-d-9-d-9, #232323);
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .price-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .FAQs {
+    margin-top: 145px;
+  }
+
+  .FAQs-title {
+    color: var(--d-9-d-9-d-9, #113b47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .about {
+    height: 55em;
+    padding-top: 140px;
+    background: var(--f-3-fdfe, #f3fdfe);
+  }
+
+  .img-about {
+    padding-top: 100px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .Avantages-method {
+    margin-top: 200px;
+  }
+
+  .cart-title {
+    color: var(--d-9-d-9-d-9, #232323);
+    font-family: Commissioner;
+    font-size: 16px;
+  }
+
+  .span-avantages {
+    position: absolute;
+    color: #FFF;
+    font-family: Orchidea Pro;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+
+  .Avantages-title {
+    color: var(--d-9-d-9-d-9, #113B47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .license {
+    margin-top: 100px;
+  }
+
+  .license-title {
+    color: var(--d-9-d-9-d-9, #113B47);
+    font-family: Tenor Sans;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .contacts {
+    margin-top: 100px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .map {
+    width: 60%;
+    position: absolute;
+    left: -21%;
+  }
+
+  .img-license {
+    width: 365px;
+    height: 518px;
+    flex-shrink: 0;
+  }
+  .bolt-color {
+    color: var(--d-9-d-9-d-9, #3A7E7F);
+  }
+  .margin-p {
+    margin-left: 38px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    background: none; 
+    color: inherit; 
+    border: none;
+    opacity: 1;
+}
+
+.carousel-control-prev{
+    background: none; 
+    color: inherit; 
+    border: none;
+    opacity: 1;
+    margin-left: -20px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background: none; 
+    color: inherit;
+    opacity: 1;
+}
+
+.populars-title{
+    margin: 0 auto;
+    width: 90%;
+    color: var(--d-9-d-9-d-9, #113B47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+.populars-buttons{
+    margin-top: 20px;
+   justify-content: space-between;
+   width: 96%;
+}
+
+.populars-buttons button{
+    width: 49%;
+}
+.specialists-title{
+    color: var(--d-9-d-9-d-9, #113B47);
+    font-family: Tenor Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+footer {
+  margin-top: 180px;
+}
+
+@media (max-width: 992px) {
+        .license-title {
+            font-size: 50px; 
+        }
+    }
+
+@media (max-width: 768px) {
+    .license-title {
+        font-size: 40px; 
+    }
+    .card-title{
+      font-size: 20px; 
+    }
+    .price-text-body {
+    padding: 25px 70px;
+    }
+    .about {
+    height: 77em;
+    }
+    .img-about {
+    width: 50%;
+    }
+    .map {
+      margin-top: 23em;
+      width: 125%;
+      position: absolute;
+      left: -21%;
+    }
+}
+@media (min-width: 320px) and (max-width: 567px) {
+  
+  .card-title{
+    width: 70%;
+      font-size: 15px; 
+    }
+
+
+}
+
+@media (max-width: 375px) {
+  .price-text-body {
+    padding: 0;
+}
+  .card-title  {
+    padding: 0 !important;
+    margin-left: 20px!important;
+  }
+  .Avantages__card {
+    padding: 0 !important;
+    height: 71px;
+  }
+  .photos {
+    margin-top: 70px;
+}
+.price-text {
+    width: 78%;
+    font-size: 15px;
+}
+.price-span {
+    margin-left: 0;
+}
+.img-about {
+    width: 100%;
+}
+.about {
+    height: 94em;
+    }
+    .photos {
+    margin-top: 100px;
+}
+.custom-svg {
+    width: 50px;
+    height: 70px;
+}
+.span-avantages {
+    margin-left: 14px;
+}
+.card-title{
+  font-size: 11px;
+}
+}
+
+</style>
