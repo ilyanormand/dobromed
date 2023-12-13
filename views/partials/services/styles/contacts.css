@@ -1,0 +1,20 @@
+.contacts {
+  margin-top: 100px;
+}
+
+.container {
+  position: relative;
+}
+
+.map {
+  width: 60%;
+  position: absolute;
+  left: -21%;
+}
+
+.bolt-color {
+  color: var(--d-9-d-9-d-9, #3A7E7F);
+}
+.margin-p {
+  margin-left: 38px;
+}

@@ -1,0 +1,26 @@
+.avantages-method {
+  margin-top: 200px;
+}
+
+.cart-title {
+  color: var(--d-9-d-9-d-9, #232323);
+  font-family: Commissioner;
+  font-size: 16px;
+  margin-left: 32px;
+}
+
+.span-avantages {
+  position: absolute;
+  color: #FFF;
+  font-family: Orchidea Pro;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.avantages-title {
+  color: var(--d-9-d-9-d-9, #113B47);
+  font-family: Tenor Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,11 @@
+.about {
+  height: 55em;
+  padding-top: 140px;
+  background: var(--f-3-fdfe, #f3fdfe);
+}
+
+.img-about {
+  padding-top: 100px;
+  width: 100%;
+  flex-shrink: 0;
+}
