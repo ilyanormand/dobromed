@@ -53,20 +53,24 @@
             </svg>` 
     };
 %>
-
-<a style="text-decoration: none;" href="<%= link %>" >
-    <button class="additional-link mx-auto">
-        <div>
-            <%- svgs[iconType] || '<svg>Default SVG</svg>' %>
-        </div>
-    </button>
-</a>
+<div class="additional-link-box">
+    <a style="text-decoration: none;" href="<%= link %>" >
+        <button class="additional-link mx-auto">
+            <div>
+                <%- svgs[iconType] || '<svg>Default SVG</svg>' %>
+            </div>
+        </button>
+    </a>
+    
+</div>
 
 
 
 <style>
 
-    
+    .additional-link-box{
+        width: 260px;
+    }
     .additional-link{
         background: #FFFEFE;
         border: 2px solid #3A7E7F; 

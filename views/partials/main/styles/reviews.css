@@ -1,8 +1,8 @@
 .swiperReviews{
-    width: 105%;
+    width: 101%;
     max-width: 1200px;
     overflow: hidden;
-    height: 400px;
+    height: 405px;
 }
 
 .reviews-title{
@@ -17,8 +17,8 @@
 
 
 .card-review-ui-kit{
-    height: 380px;
-    width: 268px;
+    height: 405px;
+    width: 260px;
     border-radius: 10px;
     border: 1px solid #3A7E7F; 
     margin: 0px 10px;

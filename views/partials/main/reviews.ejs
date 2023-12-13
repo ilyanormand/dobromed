@@ -1,33 +1,50 @@
 <div class="reviews-title text-uppercase mb-4">
     Отзывы
 </div>
+
+<div class="container p-0 ml-2 mt-5">
+    <div class="row mb-4">
+        <div class="col-3">
+            <%- include('../ui-kit/additionalLink', { iconType: "doctors", link: '/' }) %>
+        </div>
+        <div class="col-3">
+            <%- include('../ui-kit/additionalLink', { iconType: "google", link: "/" }) %>
+        </div>
+        <div class="col-3">
+            <%- include('../ui-kit/additionalLink', { iconType: "yandex", link: "/" }) %>
+        </div>
+        <div class="col-3">
+            <%- include('../ui-kit/additionalLink', { iconType: "2gis", link: "/" }) %>
+        </div>
+    </div>
+</div>
 <div class="container-swiper">
     <div class="swiperReviews">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div>
                 <%- include('./review-box', { link: "/" }) %>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div>
                 <%- include('./review-box', { link: "/" }) %>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div>
                 <%- include('./review-box', { link: "/" }) %>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div>
                 <%- include('./review-box', { link: "/" }) %>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div>
                 <%- include('./review-box', { link: "/" }) %>
             </div>
           </div>
