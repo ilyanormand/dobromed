@@ -9,5 +9,113 @@
     text-transform: uppercase; 
 }
 .service-clinic-block{
-    width: 380px;
+    max-width: 380px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1150px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 330px;
+        height: 330px;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 310px;
+        height: 310px;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 400px;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 832px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 340px;
+        height: 340px;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 290px;
+        height: 290px;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 275px;
+        height: 275px;
+        color: white;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .service-clinic-block .card-service-ui-kit{
+        background-image: url('/assets/images/cardServiceBackground1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-top: 99%; /* 1:1 Aspect Ratio */
+        color: white;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .service-clinic-block{
+        width: 100%;
+        max-width: 576px;
+    }
+
+    .service-clinic-block .card-service-ui-kit-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .services-clinic-title{
+        font-size: 25px; 
+    }
 }
