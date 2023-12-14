@@ -7,3 +7,35 @@
     line-height: normal;
     text-transform: uppercase; 
 }
+
+@media (max-width: 768px) {
+    .specialist-button-prev{
+        top: 110% !important;
+        left: 35% !important;
+    }
+
+    .specialist-button-next{
+        top: 110% !important;
+        right: 35% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .specialist-button-prev{
+        left: 30% !important;
+    }
+
+    .specialist-button-next{
+        right: 30% !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .specialist-button-prev{
+        left: 25% !important;
+    }
+
+    .specialist-button-next{
+        right: 25% !important;
+    }
+}
