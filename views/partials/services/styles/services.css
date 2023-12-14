@@ -9,7 +9,26 @@ img {
   width: 100%;
 }
 
+.quill {
+  background-image: url('../../../assets/images/quill.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.quill-left {
+  background-image: url('../../../assets/images/quillLeft.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.quill-left-black {
+  background-image: url('../../../assets/images/quillLeftBlack.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .text-block {
+  
   margin-bottom: 145px;
 }
 
@@ -325,82 +344,98 @@ footer{
     margin-top: 180px;
 }
 @media (max-width: 992px) {
-        .license-title {
-            font-size: 50px; 
-        }
-    }
-
-@media (max-width: 768px) {
-    .license-title {
-        font-size: 40px; 
-    }
-    .card-title{
-      font-size: 20px; 
-    }
-    .price-text-body {
-    padding: 25px 70px;
-    }
-    .about {
-    height: 77em;
-    }
-    .img-about {
-    width: 50%;
-    }
-    .map {
-      margin-top: 23em;
-      width: 125%;
-      position: absolute;
-      left: -21%;
-    }
-}
-@media (min-width: 320px) and (max-width: 567px) {
-  
-  .card-title{
-    width: 70%;
-      font-size: 15px; 
-    }
-
-
-}
-@media (max-width: 375px) {
-  .price-text-body {
-    padding: 0;
-}
-  .card-title  {
-    padding: 0 !important;
-    margin-left: 20px!important;
+  .quill {
+    background-size: 30%
   }
-  .avantages__card {
-    padding: 0 !important;
-    height: 71px;
+  .quill-left {
+    background-image: none;
   }
-  .photos {
-    margin-top: 70px;
+  .quill-left-black {
+    background-image: none;
+  }
+  .license-title {
+      font-size: 50px; 
+  }
 }
-.price-text {
-    width: 78%;
-    font-size: 15px;
+@media (min-width: 1200px) and (max-width: 1400px) {
+  footer {
+    margin-top: 85px;
+  }
 }
-.price-span {
-    margin-left: 0;
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .license-title {
+    font-size: 40px ; 
 }
-.img-about {
-    width: 100%;
+.card-title{
+  font-size: 20px ; 
+}
+.price-text-body {
+padding: 25px 70px ;
 }
 .about {
-    height: 94em;
+height: 77em ;
+}
+.img-about {
+width: 50% ;
+}
+.map {
+  margin-top: 23em ;
+  width: 139%;
+  position: absolute ;
+  left: -21% ;
+}
+footer {
+  margin-top: 685px;
+}
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .card-title{
+    width: 70%;
+      font-size: 15px t; 
+    }
+}
+
+@media (max-width: 375px) {
+  .price-text-body {
+    padding: 0 ;
+}
+
+  .card-title  {
+    padding: 0 ;
+    margin-left: 20px;
+  }
+  .avantages__card {
+    padding: 0 ;
+    height: 71px ;
+  }
+  .photos {
+    margin-top: 70px ;
+}
+.price-text {
+    width: 78% ;
+    font-size: 15px ;
+}
+.price-span {
+    margin-left: 0 ;
+}
+.img-about {
+    width: 100% ;
+}
+.about {
+    height: 94em ;
     }
     .photos {
-    margin-top: 100px;
+    margin-top: 100px ;
 }
 .custom-svg {
-    width: 50px;
-    height: 70px;
+    width: 50px ;
+    height: 70px ;
 }
 .span-avantages {
     margin-left: 14px;
 }
 .card-title{
-  font-size: 11px;
+  font-size: 11px ;
 }
 }
