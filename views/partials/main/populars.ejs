@@ -1,11 +1,18 @@
 
-<div class="container-swiper">
-    <div class="swiper">
+<div class="container-swiper popular-container">
+    <div class="row">
+        <div class="col-12">
+            <span class="populars-title">
+                популярные процедуры
+            </span>
+        </div>
+    </div>
+    <div class="swiper mt-3">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="service-clinic-block">
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="service-clinic-block w-100">
                 <%- include('../ui-kit/cardService', { link: "/" }) %>
                 <div class="populars-buttons d-flex">
                     <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
@@ -14,7 +21,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div class="service-clinic-block w-100">
                 <%- include('../ui-kit/cardService', { link: "/" }) %>
                 <div class="populars-buttons d-flex">
                     <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
@@ -23,7 +30,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div class="service-clinic-block w-100">
                 <%- include('../ui-kit/cardService', { link: "/" }) %>
                 <div class="populars-buttons d-flex">
                     <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
@@ -32,7 +39,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="service-clinic-block">
+            <div class="service-clinic-block w-100">
                 <%- include('../ui-kit/cardService', { link: "/" }) %>
                 <div class="populars-buttons d-flex">
                     <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
@@ -42,10 +49,10 @@
           </div>
         </div>
     </div>
-    <div class="swiper-button-prev" style="width: 65px; top:35%; left: -20px;">
+    <div class="swiper-button-prev populars-swiper-button-prev" style="width: 65px; top:43%; left: -20px;">
         <%- include('../ui-kit/arrowButton', { arrowDirection: 'left' }) %>
     </div>
-    <div class="swiper-button-next" style="width: 65px; top:35%; right: -20px;">
+    <div class="swiper-button-next populars-swiper-button-next" style="width: 65px; top:43%; right: -20px;">
         <%- include('../ui-kit/arrowButton', { arrowDirection: 'right' }) %>
     </div>
 </div>

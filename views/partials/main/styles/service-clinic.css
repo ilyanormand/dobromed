@@ -8,15 +8,11 @@
     line-height: normal;
     text-transform: uppercase; 
 }
-.service-clinic-block{
-    max-width: 380px;
-    width: 100%;
-}
 
 
 
 @media (max-width: 1150px) {
-    .service-clinic-block .card-service-ui-kit{
+    /* .service-clinic-block .card-service-ui-kit{
         background-image: url('/assets/images/cardServiceBackground1.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -24,12 +20,12 @@
         height: 330px;
         color: white;
         border-radius: 10px;
-    }
+    } */
 }
 
 
 @media (max-width: 1050px) {
-    .service-clinic-block .card-service-ui-kit{
+    /* .service-clinic-block .card-service-ui-kit{
         background-image: url('/assets/images/cardServiceBackground1.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -37,11 +33,11 @@
         height: 310px;
         color: white;
         border-radius: 10px;
-    }
+    } */
 }
 
 @media (max-width: 992px) {
-    .service-clinic-block .card-service-ui-kit{
+    /* .service-clinic-block .card-service-ui-kit{
         background-image: url('/assets/images/cardServiceBackground1.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -49,11 +45,11 @@
         height: 400px;
         color: white;
         border-radius: 10px;
-    }
+    } */
 }
 
 @media (max-width: 832px) {
-    .service-clinic-block .card-service-ui-kit{
+    /* .service-clinic-block .card-service-ui-kit{
         background-image: url('/assets/images/cardServiceBackground1.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -61,11 +57,11 @@
         height: 340px;
         color: white;
         border-radius: 10px;
-    }
+    } */
 }
 
 @media (max-width: 720px) {
-    .service-clinic-block .card-service-ui-kit{
+    /* .service-clinic-block .card-service-ui-kit{
         background-image: url('/assets/images/cardServiceBackground1.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -73,12 +69,12 @@
         height: 290px;
         color: white;
         border-radius: 10px;
-    }
+    } */
 }
 
 
 @media (max-width: 600px) {
-    .service-clinic-block .card-service-ui-kit{
+    /* .service-clinic-block .card-service-ui-kit{
         background-image: url('/assets/images/cardServiceBackground1.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -86,7 +82,7 @@
         height: 275px;
         color: white;
         border-radius: 10px;
-    }
+    } */
 }
 
 

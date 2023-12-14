@@ -17,8 +17,6 @@
 
 
 .populars-title{
-    margin: 0 auto;
-    width: 90%;
     color: var(--d-9-d-9-d-9, #113B47);
     font-family: Tenor Sans;
     font-size: 50px;
@@ -29,13 +27,118 @@
 }
 .populars-buttons{
     margin-top: 20px;
-   justify-content: space-between;
-   width: 96%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .populars-buttons button{
     width: 49%;
+    max-width: none;
 }
 
 
+@media (max-width: 992px) {
+    .populars .populars-swiper-button-prev {
+        top:105% !important; 
+        left: 40% !important;
+    }
+
+    .populars .populars-swiper-button-next {
+        top:105% !important; 
+        right: 40% !important;
+    }
+    .populars .swiper{
+        height: 550px;
+    }
+}
+
+@media (max-width: 832px) {
+    .populars .populars-swiper-button-prev {
+        top:105% !important; 
+        left: 40% !important;
+    }
+
+    .populars .populars-swiper-button-next {
+        top:105% !important; 
+        right: 40% !important;
+    }
+    .populars .swiper{
+        height: 500px;
+    }
+}
+
+@media (max-width: 722px) {
+    .populars .populars-swiper-button-prev {
+        top:105% !important; 
+        left: 40% !important;
+    }
+
+    .populars .populars-swiper-button-next {
+        top:105% !important; 
+        right: 40% !important;
+    }
+    .populars .swiper{
+        height: 450px;
+    }
+}
+
+@media (max-width: 684px) {
+    .populars .populars-swiper-button-prev {
+        top:105% !important; 
+        left: 35% !important;
+    }
+
+    .populars .populars-swiper-button-next {
+        top:105% !important; 
+        right: 35% !important;
+    }
+    .populars .swiper{
+        height: 410px;
+    }
+}
+
+@media (max-width: 620px) {
+    .populars .populars-swiper-button-prev {
+        top:110% !important; 
+        left: 35% !important;
+    }
+
+    .populars .populars-swiper-button-next {
+        top:110% !important; 
+        right: 35% !important;
+    }
+    .populars .swiper{
+        height: auto;
+    }
+
+    .populars-buttons{
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .populars-buttons button{
+        width: 100%;
+        max-width: none;
+        margin-top: 10px;
+    }
+
+    .populars-title{
+        font-size: 40px; 
+    }
+}
+
+@media (max-width: 460px) {
+    .populars-title{
+        font-size: 25px; 
+    }
+    .populars .populars-swiper-button-prev {
+        left: 20% !important;
+    }
+
+    .populars .populars-swiper-button-next {
+        right: 20% !important;
+    }
+
+}
 
