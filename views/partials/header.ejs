@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../partials/main/styles/articles.css">
     <link rel="stylesheet" href="../partials/main/styles/specialists.css">
     <link rel="stylesheet" href="../partials/main/styles/reviews.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- <header>
@@ -73,7 +73,7 @@
         </nav>
     </header> -->
 
-    <header id="header">
+    <header id="header" class="header">
         <div class="container" style="width: 1300px !important; max-width: 1300px !important;">
             <div class="row">
                 <div class="col-2">
@@ -85,36 +85,49 @@
                     </div>
                 </div>
                 <div class="col-10">
-                   <div class="row">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-white h-83">
+                   <div class="row header-top-part">
+                    <nav class="navbar-sm-none navbar navbar-expand-lg navbar-light bg-white h-83">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">О нас</a>
                             </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#"
-                                >Услуги
-                                <svg
-                                class="dropdown-toggle ms-1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="14"
-                                height="9"
-                                viewBox="0 0 14 9"
-                                fill="none">
-                                <rect
-                                    x="1.06055"
-                                    y="0.0595703"
-                                    width="9.74469"
-                                    height="1.5"
-                                    transform="rotate(45 1.06055 0.0595703)"
-                                    fill="#3A7E7F" />
-                                <rect
-                                    width="9.74469"
-                                    height="1.5"
-                                    transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.832 0.0595703)"
-                                    fill="#3A7E7F" />
-                                </svg>
-                            </a>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Услуги
+                                    <svg
+                                    class="dropdown-toggle ms-1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none">
+                                    <rect
+                                        x="1.06055"
+                                        y="0.0595703"
+                                        width="9.74469"
+                                        height="1.5"
+                                        transform="rotate(45 1.06055 0.0595703)"
+                                        fill="#3A7E7F" />
+                                    <rect
+                                        width="9.74469"
+                                        height="1.5"
+                                        transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.832 0.0595703)"
+                                        fill="#3A7E7F" />
+                                    </svg>
+                                </a>
+                            </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="dropdown-submenu">
+                                      <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="#">Лазерная косметология</a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Подменю 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Подменю 1</a></li>
+                                      </ul>
+                                    </li>
+                                    <!-- More primary dropdown items here -->
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Специалисты</a>
@@ -135,8 +148,8 @@
                         <%- include('./ui-kit/buttonAbout', { disable: false, about: false }) %>
                     </nav>
                    </div> 
-                   <div class="row" id="contact-info-box-header">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-white h-83">
+                   <div class="row header-bottom-part" id="contact-info-box-header">
+                    <nav class="navbar-sm-none navbar navbar-expand-lg navbar-light bg-white h-83">
                         <ul class="navbar-nav">
                             <li class="nav-item d-flex header-adress-box">
                                 <div class="mt-2">
@@ -176,7 +189,6 @@
                         </ul>
                     </nav>
                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -224,6 +236,94 @@
         #header-fixed-logo{
             display: none;
             margin-top: 20px;
+        }
+
+        .header-top-part{
+            color: #232323;
+            font-family: Commissioner;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal; 
+        }
+
+        .header-bottom-part{
+            color: #232323;
+            font-family: Commissioner;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal; 
+        }
+
+        @media (max-width: 992px) {
+            .navbar-sm-none {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1270px) {
+            .header-top-part{
+                font-size: 15px;
+            }
+
+            .header-bottom-part{
+                font-size: 15px;
+            }
+            .navbar-nav .nav-item {
+                margin-right: 20px;
+            }
+            .header-number-text{
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 1170px) {
+            .header-top-part{
+                font-size: 14px;
+            }
+
+            .header-bottom-part{
+                font-size: 14px;
+            }
+            .navbar-nav .nav-item {
+                margin-right: 10px;
+            }
+            .header-number-text{
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 1080px) {
+            .header-top-part{
+                font-size: 13px;
+            }
+
+            .header-bottom-part{
+                font-size: 13px;
+            }
+
+            .header-number-text{
+                font-size: 13px;
+            }
+
+            .header-adress-box{
+                width: 30%;
+            }
+
+            .nav-logo-box{
+                margin-top: 40px;
+                display: flex;
+                width: 150px;
+            }
+
+            .nav-logo-box svg{
+                width: 100px;
+            }
+
+            .navbar .button-meeting-ui-kit{
+                max-width: 150px;
+            }
         }
     </style>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
