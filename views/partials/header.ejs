@@ -74,17 +74,17 @@
     </header> -->
 
     <header id="header" class="header">
-        <div class="container" style="width: 1300px !important; max-width: 1300px !important;">
+        <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="nav-logo-box justify-content-center" id="nav-logo-box">
+                <div class="col-lg-2 col-xs-6 nav-logo-container">
+                    <div class="nav-logo-box justify-content-center w-100" id="nav-logo-box">
                         <%- include('./ui-kit/logo',{color:""}) %>
                     </div>
-                    <div class="nav-logo-box justify-content-center" id="header-fixed-logo">
+                    <div class="nav-logo-box justify-content-center w-100" id="header-fixed-logo">
                         <%- include('./ui-kit/logo',{color:"none"}) %>
                     </div>
                 </div>
-                <div class="col-10">
+                <div class="col-lg-10 col-xs-0">
                    <div class="row header-top-part">
                     <nav class="navbar-sm-none navbar navbar-expand-lg navbar-light bg-white h-83">
                         <ul class="navbar-nav">
@@ -205,7 +205,7 @@
           align-items: center;
         }
         .navbar-nav .nav-item {
-          margin-right: 30px;
+          margin-right: 10px;
         }
         .nav-logo-box{
             margin-top: 40px;
@@ -260,6 +260,11 @@
             .navbar-sm-none {
                 display: none;
             }
+            header .nav-logo-box{
+                margin-top: 20px;
+                display: flex;
+                padding-bottom: 20px;
+            }
         }
 
         @media (max-width: 1270px) {
@@ -271,7 +276,7 @@
                 font-size: 15px;
             }
             .navbar-nav .nav-item {
-                margin-right: 20px;
+                margin-right: 10px;
             }
             .header-number-text{
                 font-size: 15px;
