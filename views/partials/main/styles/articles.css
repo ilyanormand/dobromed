@@ -7,3 +7,47 @@
     line-height: normal;
     text-transform: uppercase; 
 }
+
+
+@media (max-width: 992px) {
+    .articles .actions-swiper-button-prev {
+        top:110% !important; 
+        left: 40% !important;
+    }
+
+    .articles .actions-swiper-button-next {
+        top:110% !important; 
+        right: 40% !important;
+    }
+    
+}
+
+@media (max-width: 684px) {
+    .articles .actions-swiper-button-prev {
+        top:110%  !important; 
+        left: 35% !important;
+    }
+
+    .articles .actions-swiper-button-next {
+        top:110%  !important; 
+        right: 35% !important;
+    }
+}
+
+@media (max-width: 460px) {
+    .actions-box-title{
+        font-size: 25px; 
+    }
+    .articles .actions-swiper-button-prev {
+        left: 20% !important;
+    }
+
+    .articles .actions-swiper-button-next {
+        right: 20% !important;
+    }
+
+    /* .main-actions{
+        height: 900px !important;
+    } */
+
+}

@@ -1,7 +1,7 @@
 <div class="articles-title">
     <span>Статьи</span>
 </div>
-<div class="row mt-4">
+<div class="row mt-4 visible-lg">
     <div class="col-4">
         <%- include('./articles-box', {}) %>
     </div>
@@ -12,8 +12,44 @@
         <%- include('./articles-box', {}) %>
     </div>
 </div>
-<div class="row mt-5">
+<div class="row mt-5 visible-lg">
     <div class="w-100 d-flex justify-content-center text-center">
         <%- include('../ui-kit/buttonAbout', { disable: false, about: false }) %>
+    </div>
+</div>
+
+
+<div class="container-swiper actions-box mt-3 visible-small">
+    <div class="swiper mt-3 h-auto">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="service-clinic-block w-100">
+                <%- include('./articles-box', {}) %>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-clinic-block w-100">
+                <%- include('./articles-box', {}) %>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-clinic-block w-100">
+                <%- include('./articles-box', {}) %>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-clinic-block w-100">
+                <%- include('./articles-box', {}) %>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev actions-swiper-button-prev" style="width: 65px; top:43%; left: -20px;">
+        <%- include('../ui-kit/arrowButton', { arrowDirection: 'left' }) %>
+    </div>
+    <div class="swiper-button-next actions-swiper-button-next" style="width: 65px; top:43%; right: -20px;">
+        <%- include('../ui-kit/arrowButton', { arrowDirection: 'right' }) %>
     </div>
 </div>
