@@ -1,0 +1,441 @@
+.banner__title {
+  color: var(--d-9-d-9-d-9, #113b47);
+  font-family: Tenor Sans;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+.quill {
+  background-image: url('../../../assets/images/quill.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.quill-left {
+  background-image: url('../../../assets/images/quillLeft.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.quill-left-black {
+  background-image: url('../../../assets/images/quillLeftBlack.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.text-block {
+  
+  margin-bottom: 145px;
+}
+
+.title {
+  color: var(--d-9-d-9-d-9, #232323);
+  font-family: Commissioner;
+  font-weight: 600;
+}
+
+.text {
+  color: var(--d-9-d-9-d-9, #232323);
+  font-family: Commissioner;
+  font-weight: 300;
+}
+
+.custom-color li::marker {
+  color: var(--d-9-d-9-d-9, #3a7e7f);
+}
+
+.custom-color {
+  list-style-type: disc;
+}
+
+a {
+  color: #3a7e7f;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 20px;
+}
+
+blockquote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: #3a7e7f;
+  border-radius: 10px;
+}
+
+.table-container {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #3a7e7f;
+  border-bottom: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  border: 1px solid #3a7e7f;
+  padding: 8px;
+}
+
+.table th {
+  background: var(--f-3-fdfe, #f3fdfe);
+  font-weight: bold;
+  border-top: 0;
+}
+
+.table td:last-child,
+.table th:last-child {
+  border-right: 0;
+}
+
+.table td:first-child,
+.table th:first-child {
+  border-left: 0;
+  border-top: 0;
+}
+
+.card__item {
+  box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 10px;
+}
+.card-title {
+  margin-right: auto !important;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+.avantages-text {
+  margin-left: 30px;
+}
+
+.plus {
+  width: 32px;
+  height: 32px;
+  background-color: #3a7e7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 17px 20px 21px 19px;
+}
+
+.howIt {
+  margin-bottom: 145px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.1);
+}
+.avantages__card {
+  border: 1px solid var(--2, #3a7e7f);
+  background: var(--f-3-fdfe, #f3fdfe);
+}
+
+.photos {
+  margin-top: 145px;
+}
+
+.pirce {
+  margin-top: 145px;
+}
+
+.price-title {
+  color: var(--d-9-d-9-d-9, #113b47);
+  font-family: Tenor Sans;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.price-text {
+  margin-bottom: 25px;
+}
+
+.price-text-body {
+  display: block;
+  padding: 50px 100px;
+}
+
+.price-span {
+  margin-left: 41px;
+  color: var(--d-9-d-9-d-9, #232323);
+  font-family: Commissioner;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.price-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-form-background{
+  margin-top: 125px;
+  height: 1000px;
+  
+  background: url('../../../assets/images/plastic-surgery.png');
+  background-repeat: no-repeat;
+  background: cover;
+  background-position: center;
+  transform:scaleX(-1);
+  border-top-left-radius: 60% 20%; /* Радиус скругления */
+  border-top-right-radius: 60% 20%; /* Радиус скругления */
+  background-size: 2000px;
+}
+
+.main-form{
+  transform:scaleX(-1);
+  padding-top: 250px;
+}
+
+.main-form-title{
+  color: var(--d-9-d-9-d-9, #113B47);
+  font-family: Tenor Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 54.9px; /* 137.25% */
+  text-transform: uppercase; 
+}
+
+.main-form-sended{
+  color: var(--d-9-d-9-d-9, #113B47);
+  font-family: Tenor Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 54.9px; /* 183% */
+  text-transform: uppercase;
+  margin-top: 38px; 
+}
+
+.main-form-alert{
+  color: var(--d-9-d-9-d-9, #232323);
+  font-family: Commissioner;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 28px;  
+}
+
+.main-form-inputs input{
+  width: 450px;
+  padding: 5px;
+  padding-left: 25px;
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid var(--d-9-d-9-d-9, #3A7E7F); 
+}
+
+.FAQs {
+  margin-top: 145px;
+}
+
+.FAQs-title {
+  color: var(--d-9-d-9-d-9, #113b47);
+  font-family: Tenor Sans;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about {
+  height: 55em;
+  padding-top: 140px;
+  background: var(--f-3-fdfe, #f3fdfe);
+}
+
+.img-about {
+  padding-top: 100px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.avantages-method {
+  margin-top: 200px;
+}
+
+.cart-title {
+  color: var(--d-9-d-9-d-9, #232323);
+  font-family: Commissioner;
+  font-size: 16px;
+  margin-left: 32px;
+}
+
+.span-avantages {
+  position: absolute;
+  color: #FFF;
+  font-family: Orchidea Pro;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.avantages-title {
+  color: var(--d-9-d-9-d-9, #113B47);
+  font-family: Tenor Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.license {
+  margin-top: 100px;
+}
+
+.license-title {
+  color: var(--d-9-d-9-d-9, #113B47);
+  font-family: Tenor Sans;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contacts {
+  margin-top: 100px;
+}
+
+.container {
+  position: relative;
+}
+
+.map {
+  width: 60%;
+  position: absolute;
+  left: -21%;
+}
+
+.bolt-color {
+  color: var(--d-9-d-9-d-9, #3A7E7F);
+}
+.margin-p {
+  margin-left: 38px;
+}
+.margin-r {
+  margin-right: 17px;
+}
+
+footer{
+    margin-top: 180px;
+}
+@media (max-width: 992px) {
+  .quill {
+    background-size: 30%
+  }
+  .quill-left {
+    background-image: none;
+  }
+  .quill-left-black {
+    background-image: none;
+  }
+  .license-title {
+      font-size: 50px; 
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  footer {
+    margin-top: 85px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .license-title {
+    font-size: 40px ; 
+}
+.card-title{
+  font-size: 20px ; 
+}
+.price-text-body {
+padding: 25px 70px ;
+}
+.about {
+height: 77em ;
+}
+.img-about {
+width: 50% ;
+}
+.map {
+  margin-top: 23em ;
+  width: 139%;
+  position: absolute ;
+  left: -21% ;
+}
+footer {
+  margin-top: 685px;
+}
+}
+@media (min-width: 320px) and (max-width: 766px) {
+  .card-title{
+    width: 70%;
+      font-size: 15px t; 
+    }
+}
+
+@media (max-width: 375px) {
+  .price-text-body {
+    padding: 0 ;
+}
+
+  .card-title  {
+    padding: 0 ;
+    margin-left: 20px;
+  }
+  .avantages__card {
+    padding: 0 ;
+    height: 71px ;
+  }
+  .photos {
+    margin-top: 70px ;
+}
+.price-text {
+    width: 78% ;
+    font-size: 15px ;
+}
+.price-span {
+    margin-left: 0 ;
+}
+.img-about {
+    width: 100% ;
+}
+.about {
+    height: 94em ;
+    }
+    .photos {
+    margin-top: 100px ;
+}
+.custom-svg {
+    width: 50px ;
+    height: 70px ;
+}
+.span-avantages {
+    margin-left: 14px;
+}
+.card-title{
+  font-size: 11px ;
+}
+}

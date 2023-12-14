@@ -1,17 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous" />
-  </head>
-  <body>
-    <%- include('../partials/header') %> <%- include('../partials/banner') %>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+<div class="container">
+      <%- include('../partials/header') %>
+      <%- include('../partials/services/banner') %>
+</div>
+      <%- include('../partials/services/textBlock') %>
+      <div class="container">
+      <%- include('../partials/services/questions') %>
+      <%- include('../partials/services/avantages') %>
+      <%- include('../partials/services/photos') %>
+</div>
+<%- include('../partials/services/price') %>
+<%- include('../partials/services/form') %>
+    <div class="container">
+          <%- include('../partials/services/specialists') %>
+          <%- include('../partials/services/FAQs') %>
+          <%- include('../partials/main/reviews', {}) %>
+    </div>
+<div class="about">
+  <%- include('../partials/services/about') %>
+  <div class="container">
+      <%- include('../partials/services/photos') %>
+      <%- include('../partials/services/avantagesMethod') %>
+  </div>
+        <%- include('../partials/services/license') %>
+        <div class="container">
+        <%- include('../partials/services/contacts') %>
+  </div>
+  <%- include('../partials/footer') %>
+</div>
+
+
+
+
+
