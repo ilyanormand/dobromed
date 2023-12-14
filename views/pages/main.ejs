@@ -27,15 +27,18 @@
 
     <div class="container certification">
         <div class="row certificate-box">
-            <div class="col-6 certificate-title">
+            <div class="col-lg-6 certificate-title">
                 <h1>Сертификат</h1>
-                <div class="mt-4">
+                <div class="mt-4 button-certificate-lg">
                     <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
                 </div>
             </div>
-            <div class="col-6 cerficate-description">
+            <div class="col-lg-6 cerficate-description">
                 <p>Подарите близкому человеку возможность позаботиться о своем здоровье и красоте.</p>
                 <p>Сертификат распростроняется на все виды услуг</p>
+                <div class="mt-4 button-certificate-xs">
+                    <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
+                </div>
             </div>
         </div>
     </div>
@@ -197,6 +200,42 @@
         border: 1px solid var(--d-9-d-9-d-9, #3A7E7F); 
     }
 
+    @media (max-width: 1100px) {
+        .certificate-title h1{
+            font-size: 50px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .button-certificate-xs{
+            display: none;
+        }
+
+        .button-certificate-lg{
+            display: block;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .button-certificate-xs{
+            display: block;
+        }
+
+        .button-certificate-lg{
+            display: none;
+        }
+    }
+
+    @media (max-width: 460px) {
+        .certificate-title h1{
+            font-size: 25px;
+            
+        }
+
+        .cerficate-description p{
+            font-size: 16px; 
+        }
+    }
 </style>
 
 
