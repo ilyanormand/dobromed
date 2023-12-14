@@ -52,7 +52,7 @@
     </div>
     <div class="container-fluidd main-form-background">
         <div class="container main-form">
-            <div class="row w-50">
+            <div class="row">
                 <div class="col-12">
                     <div class="main-form-title text-uppercase">
                         Поможем с выбором услуги
@@ -147,7 +147,7 @@
         height: 1000px;
         background: url('../assets/images//plastic-surgery.png');
         background-repeat: no-repeat;
-        background: cover;
+        background-size: cover; 
         background-position: center;
         transform:scaleX(-1);
         border-top-left-radius: 60% 20%; /* Радиус скругления */
@@ -224,6 +224,22 @@
         .button-certificate-lg{
             display: none;
         }
+
+        .main-form-background{
+            height: 800px; 
+            background-size: cover;
+            width: 100%;
+        }
+        .main-form{
+            transform:scaleX(-1);
+            padding-top: 200px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main-form-title{
+            font-size: 36px;
+        }
     }
 
     @media (max-width: 460px) {
@@ -234,6 +250,55 @@
 
         .cerficate-description p{
             font-size: 16px; 
+        }
+        .main-form-title{
+            font-size: 25px;
+        }
+        .main-form-sended{
+            font-size: 25px;
+        }
+    }
+
+    @media(max-width: 576px){
+        .main-form-title{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main-form-sended{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main-form-alert{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main-form-inputs{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main-form-inputs input{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        .main-form-contact{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .main-form-contact .button-meeting-ui-kit{
+            width:100%;
+            max-width: none;
         }
     }
 </style>
