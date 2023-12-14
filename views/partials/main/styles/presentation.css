@@ -48,3 +48,79 @@
     font-weight: 400;
     line-height: normal; 
 }
+
+@media (max-width: 992px) {
+    .presentation-container .presentation-brand{
+        font-size: 110px;
+    }
+
+    .presentation-title{
+        color: #FFF;
+        font-family: Orchidea Pro;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .presentation-container .presentation-brand{
+        font-size: 60px;
+    }
+
+    .presentation-container{
+        height: 600px;
+    }
+
+    .presentation-title{
+        color: #FFF;
+        font-family: Orchidea Pro;
+        font-size: 30px; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase; 
+    }
+
+    .presentation-subtitle{
+        color: #FFF;
+        font-family: Commissioner;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+}
+
+
+@media (max-width: 500px) {
+    .presentation-container .presentation-brand{
+        font-size: 50px;
+    }
+
+    .presentation-container{
+        height: 500px;
+    }
+
+    .presentation-title{
+        color: #FFF;
+        font-family: Orchidea Pro;
+        font-size: 24px; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase; 
+    }
+
+    .presentation-subtitle{
+        color: #FFF;
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+}
