@@ -2,39 +2,51 @@
     <div class="container-fluidd footer-background">
         <div class="container">
             <div class="row top-footer">
-                <div class="col-2">
+                <div class="col-lg-2 col-12 justify-content-center text-center">
                     <%- include('./ui-kit/logo',{color:"white"}) %>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
                     <p>Добромед, ООО, ИНН 8601068801
                         ОГРН 1198617011581 от 03.10.2019
                         Лицензия: ЛО-86-01-003690</p>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
                     <p>
                         Луговая улица, 4, микрорайон Пригород Лесное, Московская область
                     </p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 mt-lg-0 mt-4">
                     <p>+7 (985) 000-11-03
                         proderma@bk.ru</p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 mt-lg-0 mt-4">
                     <%- include('./ui-kit/social', { disable: false, color: 'white' }) %>
                 </div>
             </div>
-            <div class="row bottom-footer">
-                <div class="col-3">
+            <div class="row bottom-footer visible-lg">
+                <div class="col-lg-3">
                     <p>Политика конфиденциальности</p>
                     <p class="pt-3">Правила предоставления платных медицинских услуг</p>
                 </div>
-                <div class="col-3 offset-1">
+                <div class="col-lg-3 offset-lg-1">
                     <p>Пользовательское соглашение</p>
                     <p class="pt-3">Порядок оказания медицинской помощи населению</p>
                 </div>
-                <div class="col-3 offset-1">
+                <div class="col-lg-3 offset-lg-1">
                     <p>Контакты надзорных организаций</p>
                     <p class="pt-3">2022 ⓒ</p>
+                </div>
+            </div>
+            <div class="row bottom-footer visible-small">
+                <div class="col-md-6 col-12 mt-0">
+                    <p>Политика конфиденциальности</p>
+                    <p>Правила предоставления платных медицинских услуг</p>
+                    <p>Пользовательское соглашение</p>
+                </div>
+                <div class="col-md-6 col-12 mt-0">
+                    <p class="">Порядок оказания медицинской помощи населению</p>
+                    <p>Контакты надзорных организаций</p>
+                    <p >2022 ⓒ</p>
                 </div>
             </div>
         </div>
@@ -44,7 +56,7 @@
 <style>
  .footer-background{
     background: var(--d-9-d-9-d-9, #113B47);
-    height: 381px;  
+    height: auto;  
     color: white;
  }
 
@@ -66,6 +78,10 @@
  .bottom-footer{
     margin-top: 36px;
  }
+
+ @media (max-width: 768px) {
+    
+}
 </style>
 
 <script>
