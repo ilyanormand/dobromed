@@ -25,24 +25,28 @@
         </div>
     </div>
 
-    <div class="container certification">
-        <div class="row certificate-box">
-            <div class="col-lg-6 certificate-title">
-                <h1>Сертификат</h1>
-                <div class="mt-4 button-certificate-lg">
-                    <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
-                </div>
-            </div>
-            <div class="col-lg-6 cerficate-description">
-                <p>Подарите близкому человеку возможность позаботиться о своем здоровье и красоте.</p>
-                <p>Сертификат распростроняется на все виды услуг</p>
-                <div class="mt-4 button-certificate-xs">
-                    <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluidd quill-left-light">
+      <div class="container-fluidd  quill-right-light">
+        <div class="container certification">
+          <div class="row certificate-box">
+              <div class="col-lg-6 certificate-title">
+                  <h1>Сертификат</h1>
+                  <div class="mt-4 button-certificate-lg">
+                      <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
+                  </div>
+              </div>
+              <div class="col-lg-6 cerficate-description">
+                  <p>Подарите близкому человеку возможность позаботиться о своем здоровье и красоте.</p>
+                  <p>Сертификат распростроняется на все виды услуг</p>
+                  <div class="mt-4 button-certificate-xs">
+                      <%- include('../partials/ui-kit/buttonAbout', {disable: false, about: false}) %>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      
     </div>
-
     <div class="container specialists">
         <%- include('../partials/main/specialists', {}) %>
     </div>
@@ -50,7 +54,10 @@
     <div class="container reviews">
         <%- include('../partials/main/reviews', {}) %>
     </div>
-    <div class="container-fluidd main-form-background">
+
+    
+      <div class="container-fluidd main-form-background">
+        <div class="container-fluidd quill-black">
         <div class="container main-form">
             <div class="row">
                 <div class="col-12">
@@ -76,6 +83,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
     
 
 </main>
@@ -98,13 +107,33 @@
         padding-bottom: 100px;
     }
 
+    .quill-left-light {
+      background-image: url(../assets/images/quillLeftLight.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    .quill-right-light {
+      background-image: url(../assets/images/quillRightLight.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+
+    .quill-black {
+      background-image: url(../assets/images/quillBlack.svg);
+      background-repeat: no-repeat;
+      background-position: left top;
+      transform:scaleX(-1);
+}
+    
+
     .certification{
         margin-top: 126px;
         height: 411px;
     }
 
     .certificate-box{
-        margin-top: 115px;   
+        padding-top: 115px;   
     }
 
     .certificate-title h1{
@@ -156,7 +185,7 @@
     }
 
     .main-form{
-        transform:scaleX(-1);
+      transform:scaleX(1);
         padding-top: 250px;
     }
 
@@ -234,6 +263,28 @@
             transform:scaleX(-1);
             padding-top: 200px;
         }
+       
+  .quill {
+    background-size: 30%
+  }
+  .quill-left {
+    background-image: none;
+  }
+  .quill-left-black {
+    background-image: none;
+  }
+  .quill-left-light {
+    background-size: 50%
+    }
+
+    .quill-right-light {
+      background-size: 30%
+    }
+
+    .quill-black {
+      transform:scaleX(1);
+}
+
     }
 
     @media (max-width: 768px) {
@@ -301,6 +352,7 @@
             max-width: none;
         }
     }
+    
 </style>
 
 
