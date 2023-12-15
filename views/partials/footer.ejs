@@ -193,5 +193,35 @@ document.addEventListener('DOMContentLoaded', () => {
             navLogoFixed.style.display = 'none'
         }
     };
+
+
+    document.querySelectorAll('.dropdown-menu a.dropdown-toggle').forEach(function(element) {
+        element.addEventListener('click', function(e) {
+            let nextElement = this.nextElementSibling;
+            let parentMenu = this.closest('.dropdown-menu');
+
+            if (!nextElement.classList.contains('show')) {
+                // Close all open menus within the parent
+                Array.from(parentMenu.querySelectorAll('.show')).forEach(function(openMenu) {
+                    openMenu.classList.remove('show');
+                });
+            }
+
+            if (nextElement && nextElement.classList.contains('dropdown-menu')) {
+                // Toggle the submenu
+                nextElement.classList.toggle('show');
+                e.stopPropagation();
+                e.preventDefault();
+            }
+
+            // Close submenu on mouseleave
+            nextElement.closest('.dropdown').addEventListener('mouseleave', function() {
+                Array.from(this.querySelectorAll('.dropdown-menu')).forEach(function(dropdown) {
+                    dropdown.classList.remove('show');
+                });
+            });
+        });
+    });
+
 </script>
 </body>
