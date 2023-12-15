@@ -83,11 +83,86 @@
                 <div class="col-lg-2 col-xs-6 nav-logo-container">
                     <div class="nav-logo-box justify-content-center w-100" id="nav-logo-box">
                         <%- include('./ui-kit/logo',{color:""}) %>
+                        <div style="position: fixed;right: 0;">
+                            <button class="hamburger" type="button" aria-label="Toggle navigation">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                            <div class="full-screen-menu">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <%- include('./ui-kit/logo',{color:"white"}) %>
+                                    <div style="position: absolute;right: 0;" class="close-menu mt-3" aria-label="Close menu">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1449_7880)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17.6525L21.6287 24.2813C21.9805 24.633 22.4576 24.8306 22.955 24.8306C23.4524 24.8306 23.9295 24.633 24.2812 24.2813C24.633 23.9295 24.8306 23.4525 24.8306 22.955C24.8306 22.4576 24.633 21.9805 24.2812 21.6288L17.65 15L24.28 8.37127C24.4541 8.1971 24.5921 7.99035 24.6863 7.76282C24.7805 7.5353 24.829 7.29145 24.8289 7.0452C24.8288 6.79895 24.7803 6.55512 24.686 6.32764C24.5917 6.10016 24.4535 5.89347 24.2794 5.71939C24.1052 5.54531 23.8985 5.40723 23.6709 5.31305C23.4434 5.21887 23.1996 5.17042 22.9533 5.17048C22.7071 5.17054 22.4632 5.2191 22.2357 5.31339C22.0083 5.40768 21.8016 5.54585 21.6275 5.72002L15 12.3488L8.37124 5.72002C8.19836 5.54085 7.99154 5.39792 7.76283 5.29954C7.53411 5.20117 7.2881 5.14933 7.03914 5.14705C6.79018 5.14477 6.54326 5.1921 6.31279 5.28626C6.08232 5.38043 5.8729 5.51956 5.69677 5.69552C5.52064 5.87149 5.38132 6.08077 5.28693 6.31115C5.19255 6.54154 5.14499 6.78841 5.14704 7.03738C5.14908 7.28634 5.20069 7.5324 5.29885 7.7612C5.397 7.99 5.53975 8.19697 5.71874 8.37002L12.35 15L5.71999 21.63C5.541 21.8031 5.39825 22.01 5.3001 22.2388C5.20194 22.4676 5.15033 22.7137 5.14829 22.9627C5.14624 23.2116 5.1938 23.4585 5.28818 23.6889C5.38257 23.9193 5.52189 24.1285 5.69802 24.3045C5.87415 24.4805 6.08357 24.6196 6.31404 24.7138C6.54451 24.8079 6.79143 24.8553 7.04039 24.853C7.28935 24.8507 7.53536 24.7989 7.76407 24.7005C7.99279 24.6021 8.19961 24.4592 8.37249 24.28L15 17.6538V17.6525Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1449_7880">
+                                            <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg> 
+                                    </div>
+                                </div>
+                                <nav>
+                                    <ul class="hamburger-list">
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                        <li class="hamburger-item">test</li>
+                                    </ul>
+                                </nav>
+                                
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="nav-logo-box justify-content-center w-100" id="header-fixed-logo">
                         <%- include('./ui-kit/logo',{color:"none"}) %>
+                        <div style="position: fixed;right: 0;">
+                            <button class="hamburger" type="button" aria-label="Toggle navigation">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                            <div class="full-screen-menu">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <%- include('./ui-kit/logo',{color:"white"}) %>
+                                    <div style="position: absolute;right: 0;" class="close-menu mt-3" aria-label="Close menu">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1449_7880)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17.6525L21.6287 24.2813C21.9805 24.633 22.4576 24.8306 22.955 24.8306C23.4524 24.8306 23.9295 24.633 24.2812 24.2813C24.633 23.9295 24.8306 23.4525 24.8306 22.955C24.8306 22.4576 24.633 21.9805 24.2812 21.6288L17.65 15L24.28 8.37127C24.4541 8.1971 24.5921 7.99035 24.6863 7.76282C24.7805 7.5353 24.829 7.29145 24.8289 7.0452C24.8288 6.79895 24.7803 6.55512 24.686 6.32764C24.5917 6.10016 24.4535 5.89347 24.2794 5.71939C24.1052 5.54531 23.8985 5.40723 23.6709 5.31305C23.4434 5.21887 23.1996 5.17042 22.9533 5.17048C22.7071 5.17054 22.4632 5.2191 22.2357 5.31339C22.0083 5.40768 21.8016 5.54585 21.6275 5.72002L15 12.3488L8.37124 5.72002C8.19836 5.54085 7.99154 5.39792 7.76283 5.29954C7.53411 5.20117 7.2881 5.14933 7.03914 5.14705C6.79018 5.14477 6.54326 5.1921 6.31279 5.28626C6.08232 5.38043 5.8729 5.51956 5.69677 5.69552C5.52064 5.87149 5.38132 6.08077 5.28693 6.31115C5.19255 6.54154 5.14499 6.78841 5.14704 7.03738C5.14908 7.28634 5.20069 7.5324 5.29885 7.7612C5.397 7.99 5.53975 8.19697 5.71874 8.37002L12.35 15L5.71999 21.63C5.541 21.8031 5.39825 22.01 5.3001 22.2388C5.20194 22.4676 5.15033 22.7137 5.14829 22.9627C5.14624 23.2116 5.1938 23.4585 5.28818 23.6889C5.38257 23.9193 5.52189 24.1285 5.69802 24.3045C5.87415 24.4805 6.08357 24.6196 6.31404 24.7138C6.54451 24.8079 6.79143 24.8553 7.04039 24.853C7.28935 24.8507 7.53536 24.7989 7.76407 24.7005C7.99279 24.6021 8.19961 24.4592 8.37249 24.28L15 17.6538V17.6525Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1449_7880">
+                                            <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg> 
+                                    </div>
+                                </div>
+                                <nav>
+                                    <ul class="hamburger-list text-center">
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                        <li class="hamburger-item text-center">test</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-10 col-xs-0">
                    <div class="row header-top-part">
                     <nav class="navbar-sm-none navbar navbar-expand-lg navbar-light bg-white h-83">
@@ -355,6 +430,90 @@
 
             .navbar .button-meeting-ui-kit{
                 max-width: 150px;
+            }
+        }
+
+        .hamburger {
+            display: none; /* Hidden by default, shown in small screens */
+            position: relative;
+            z-index: 2; /* Ensure it's above other content */
+            margin: 15px; /* Adjust as needed */
+            width: 30px; /* Width of the hamburger */
+            height: 24px; /* Height of the hamburger */
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .hamburger-box {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            display: block;
+            position: absolute;
+            height: 3px; /* Thickness of each line */
+            width: 100%;
+            background-color: #333; /* Color of the hamburger lines */
+            border-radius: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hamburger-inner {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .hamburger-inner::before {
+            content: '';
+            top: -10px; /* Position of the top line */
+        }
+
+        .hamburger-inner::after {
+            content: '';
+            bottom: -10px; /* Position of the bottom line */
+        }
+
+        .full-screen-menu {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            padding-bottom: 10%;
+            top: 0;
+            left: 0;
+            background: var(--d-9-d-9-d-9, #113B47); 
+            z-index: 1050;
+            color: white;
+        }
+
+        .hamburger-list{
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .hamburger-item {
+            border-bottom: 1px solid #255D6C;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+
+        .hamburger-item:hover{
+            font-weight: bold;
+            background: #1B4E5C;
+        }
+
+        .close-menu {
+            cursor: pointer;
+        }
+
+        @media (max-width: 992px) {
+            .hamburger {
+                display: block; 
             }
         }
     </style>

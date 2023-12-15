@@ -194,6 +194,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    document.addEventListener('DOMContentLoaded', function() {
+    // Select all hamburger elements
+        var hamburgers = document.querySelectorAll('.hamburger');
+        
+        hamburgers.forEach(function(hamburger) {
+            // Assuming each hamburger has a corresponding full-screen menu
+            var fullScreenMenu = hamburger.nextElementSibling; 
+
+            // Toggle the menu on hamburger click
+            hamburger.addEventListener('click', function() {
+                fullScreenMenu.style.display = 'block';
+            });
+
+            // Select the close button within this full-screen menu
+            var closeMenu = fullScreenMenu.querySelector('.close-menu');
+
+            // Close the menu on close button click
+            closeMenu.addEventListener('click', function() {
+                fullScreenMenu.style.display = 'none';
+            });
+        });
+    });
 
     document.querySelectorAll('.dropdown-menu a.dropdown-toggle').forEach(function(element) {
         element.addEventListener('click', function(e) {
