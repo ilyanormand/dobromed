@@ -1,42 +1,26 @@
-
-<% if (type === 'short') { %>
-  <a style="text-decoration: none;" href="" >
-      <div class="card card-actions-ui-kit-short">
-          <div class="card-actions-image-ui-kit-short">
-              
+<a style="text-decoration: none;" href="" >
+  <div class="card card-actions-ui-kit-short">
+      <div class="card-actions-image-ui-kit-short">   
+      </div>
+      <div class="card-body d-flex flex-column  text-left">
+          <div class="card-actions-text-ui-kit">
+              <h5>50% скидка </h5>
           </div>
-          <div class="card-body d-flex flex-column justify-content-center">
-              <div class="card-actions-text-ui-kit">
-                  <h5>50% скидка </h5>
-                  
-              </div>
-              <div class="card-actions-buttons-ui-kit d-flex">
-                  <div class="text-center col-6 mr-1">
-                      <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                  </div>
+          <div class="card-actions-buttons-ui-kit d-flex">
+              <div class="text-left col-12 mr-1">
+                  <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
               </div>
           </div>
       </div>
-  </a>
-  
-<% } else { %>
-  <a style="text-decoration: none;" href="" >
-      <div class="card card-actions-ui-kit">
-          <div class="card-actions-image-ui-kit">
-              
-          </div>
-          <div class="card-body d-flex flex-column justify-content-center">
-              <div class="card-actions-text-ui-kit">
-                  <h5>50% скидка </h5>
-                  
-              </div>
-              <div class="card-actions-buttons-ui-kit">
-                  <div class="text-center d-flex justify-content-center">
-                      <%- include('../ui-kit/buttonAbout', { disable: false, about: true }) %>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </a>
-<% } %>
+    </div>
+</a>
 
+<style>
+ .button-about-ui-kit{
+      color: var(--d-9-d-9-d-9, #fff);
+      background-color: #3A7E7F;
+      max-width: 178px;
+      width: 100%;
+      height: 50px;
+  }
+</style>
