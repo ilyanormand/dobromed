@@ -1,3 +1,6 @@
+.header-fixed {
+  top: 0;
+}
 .banner__title {
   color: var(--d-9-d-9-d-9, #113b47);
   font-family: Tenor Sans;
@@ -340,9 +343,6 @@ blockquote::before {
   margin-right: 17px;
 }
 
-footer{
-    margin-top: 180px;
-}
 @media (max-width: 992px) {
   .quill {
     background-size: 30%
@@ -358,9 +358,6 @@ footer{
   }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
-  footer {
-    margin-top: 85px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -384,9 +381,6 @@ width: 50% ;
   width: 139%;
   position: absolute ;
   left: -21% ;
-}
-footer {
-  margin-top: 685px;
 }
 }
 @media (min-width: 320px) and (max-width: 766px) {
