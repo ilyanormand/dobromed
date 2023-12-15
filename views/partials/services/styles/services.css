@@ -1,3 +1,6 @@
+.container{
+  max-width: 1142px !important;
+}
 .header-fixed {
   top: 0;
 }
@@ -155,9 +158,6 @@ blockquote::before {
   margin-top: 145px;
 }
 
-.pirce {
-  margin-top: 145px;
-}
 
 .price-title {
   color: var(--d-9-d-9-d-9, #113b47);
@@ -175,7 +175,7 @@ blockquote::before {
 
 .price-text-body {
   display: block;
-  padding: 50px 100px;
+  padding: 35px 70px;
 }
 
 .price-span {
@@ -267,6 +267,7 @@ blockquote::before {
 }
 
 .about {
+  margin-top: 100px;
   height: 55em;
   padding-top: 140px;
   background: var(--f-3-fdfe, #f3fdfe);
@@ -279,7 +280,7 @@ blockquote::before {
 }
 
 .avantages-method {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .cart-title {
@@ -323,14 +324,14 @@ blockquote::before {
   margin-top: 100px;
 }
 
-.container {
+.map-container {
   position: relative;
 }
-
-.map {
-  width: 60%;
-  position: absolute;
-  left: -21%;
+.map-img {
+  width: 100%;
+  height: auto;
+  max-width: 139%;
+  display: block;
 }
 
 .bolt-color {
@@ -353,40 +354,24 @@ blockquote::before {
   .quill-left-black {
     background-image: none;
   }
-  .license-title {
-      font-size: 50px; 
-  }
-}
-@media (min-width: 1200px) and (max-width: 1400px) {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .license-title {
-    font-size: 40px ; 
-}
 .card-title{
   font-size: 20px ; 
 }
-.price-text-body {
-padding: 25px 70px ;
-}
 .about {
-height: 77em ;
+height: 85em ;
 }
 .img-about {
 width: 50% ;
 }
-.map {
-  margin-top: 23em ;
-  width: 139%;
-  position: absolute ;
-  left: -21% ;
+
 }
-}
-@media (min-width: 320px) and (max-width: 766px) {
+@media (min-width: 375px) and (max-width: 766px) {
   .card-title{
     width: 70%;
-      font-size: 15px t; 
+      font-size: 15px; 
     }
 }
 

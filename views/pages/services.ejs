@@ -1,35 +1,267 @@
 <%- include('../partials/header') %>
-<div class="container">
-      
-      <%- include('../partials/services/banner') %>
-</div>
-      <%- include('../partials/services/textBlock') %>
-      <div class="container">
-      <%- include('../partials/services/questions') %>
-      <%- include('../partials/services/avantages') %>
-      <%- include('../partials/services/photos') %>
-</div>
-<%- include('../partials/services/price') %>
-<%- include('../partials/services/form') %>
-    <div class="container">
-          <%- include('../partials/services/specialists') %>
-          <%- include('../partials/services/FAQs') %>
-          <%- include('../partials/main/reviews', {}) %>
-    </div>
-<div class="about">
-  <%- include('../partials/services/about') %>
+<main>
   <div class="container">
-      <%- include('../partials/services/photos') %>
-      <%- include('../partials/services/avantagesMethod') %>
+    <%- include('../partials/services/banner') %>
   </div>
-        <%- include('../partials/services/license') %>
-        <div class="container">
-        <%- include('../partials/services/contacts') %>
+  <div class="container-fluidd">
+    <%- include('../partials/services/textBlock') %>
   </div>
-  <%- include('../partials/footer') %>
-</div>
+  <div class="container">
+    <%- include('../partials/services/questions') %>
+    <%- include('../partials/services/avantages') %>
+    <%- include('../partials/services/photos') %>
+  </div>
+  <div class="container-fluidd">
+    <%- include('../partials/services/price') %>
+    <%- include('../partials/services/form') %>
+  </div>
+  <div class="container">
+    <%- include('../partials/main/specialists', {}) %>
+    <%- include('../partials/services/FAQs') %>
+    <%- include('../partials/main/reviews', {}) %>
+  </div>
+  <div class="container-fluidd">
+    <div class="about">
+      <%- include('../partials/services/about') %>
+    </div>
+  </div>
+  <div class="container">
+    <%- include('../partials/services/photos') %>
+    <%- include('../partials/services/avantagesMethod') %>
+  </div>
+  <div class="container-fluidd">
+    <%- include('../partials/services/license') %>
+  </div>
+  <div class="container">
+    <%- include('../partials/services/contacts') %>
+  </div>
+  <div class="container-fluidd">
+    <%- include('../partials/footer') %>
+  </div>
+</main>
 
+<style>
 
+  .container{
+      max-width: 1142px !important;
+  }
+
+  .main-actions{
+      margin-top: 145px;
+      padding-top: 15%;
+      padding-bottom: 15%;
+      background: #F3FDFE;
+  }
+
+  .articles{
+      margin-top: 145px;
+      padding-bottom: 100px;
+  }
+
+  .certification{
+      margin-top: 126px;
+      height: 411px;
+  }
+
+  .certificate-box{
+      margin-top: 115px;   
+  }
+
+  .certificate-title h1{
+      color: var(--d-9-d-9-d-9, #113B47);
+      font-family: Tenor Sans;
+      font-size: 68px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase; 
+  }
+  .cerficate-description{
+      color: #232323;
+      font-family: Commissioner;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 31.9px; /* 132.917% */ 
+  }
+  
+
+  .certificate-title button{
+      max-width: 315px; 
+  }
+
+  .services-clinic{
+      margin-top: 120px;
+  }
+
+  .populars{
+      margin-top: 145px;
+  }
+
+  .reviews{
+      margin-top: 145px;
+  }
+
+  .main-form-background{
+      margin-top: 125px;
+      height: 1000px;
+      background: url('../assets/images//plastic-surgery.png');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: center;
+      transform:scaleX(-1);
+      border-top-left-radius: 60% 20%; /* Радиус скругления */
+      border-top-right-radius: 60% 20%; /* Радиус скругления */
+      background-size: 2000px;
+  }
+
+  .main-form{
+      transform:scaleX(-1);
+      padding-top: 250px;
+  }
+
+  .main-form-title{
+      color: var(--d-9-d-9-d-9, #113B47);
+      font-family: Tenor Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 54.9px; /* 137.25% */
+      text-transform: uppercase; 
+  }
+
+  .main-form-sended{
+      color: var(--d-9-d-9-d-9, #113B47);
+      font-family: Tenor Sans;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 54.9px; /* 183% */
+      text-transform: uppercase;
+      margin-top: 38px; 
+  }
+
+  .main-form-alert{
+      color: var(--d-9-d-9-d-9, #232323);
+      font-family: Commissioner;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-top: 28px;  
+  }
+
+  .main-form-inputs input{
+      width: 450px;
+      padding: 5px;
+      padding-left: 25px;
+      height: 55px;
+      border-radius: 10px;
+      border: 1px solid var(--d-9-d-9-d-9, #3A7E7F); 
+  }
+
+  @media (max-width: 1100px) {
+      .certificate-title h1{
+          font-size: 50px;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .button-certificate-xs{
+          display: none;
+      }
+
+      .button-certificate-lg{
+          display: block;
+      }
+  }
+
+  @media (max-width: 992px) {
+      .button-certificate-xs{
+          display: block;
+      }
+
+      .button-certificate-lg{
+          display: none;
+      }
+
+      .main-form-background{
+          height: 800px; 
+          background-size: cover;
+          width: 100%;
+      }
+      .main-form{
+          transform:scaleX(-1);
+          padding-top: 200px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .main-form-title{
+          font-size: 36px;
+      }
+  }
+
+  @media (max-width: 460px) {
+      .certificate-title h1{
+          font-size: 25px;
+          
+      }
+
+      .cerficate-description p{
+          font-size: 16px; 
+      }
+      .main-form-title{
+          font-size: 25px;
+      }
+      .main-form-sended{
+          font-size: 25px;
+      }
+  }
+
+  @media(max-width: 576px){
+      .main-form-title{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .main-form-sended{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .main-form-alert{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .main-form-inputs{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .main-form-inputs input{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+      }
+      .main-form-contact{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .main-form-contact .button-meeting-ui-kit{
+          width:100%;
+          max-width: none;
+      }
+  }
+</style>
 
 
 
