@@ -1,0 +1,67 @@
+<% if (disable) { %>
+    <div class="disabled-ui-kit disabaled-telegram-ui-kit telegram-bot-container d-flex justify-content-center align-items-center">
+        <div>
+            <span>Телеграм-бот</span>
+        </div>
+        <div class="telegram-icon ml-3 d-flex justify-content-center align-items-center">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.8945 3.27393L13.65 13.8591C13.4805 14.606 13.039 14.792 12.4116 14.4403L8.99145 11.92L7.34138 13.5074C7.15863 13.6902 7.00617 13.8426 6.65395 13.8426L6.89992 10.3597L13.2383 4.63234C13.514 4.3869 13.1782 4.25037 12.8101 4.49634L4.97413 9.43059L1.6007 8.37446C0.86704 8.1455 0.853759 7.64081 1.7537 7.28859L14.9484 2.20506C15.5593 1.97609 16.0937 2.34053 15.8945 3.27393Z" fill="white"/>
+            </svg> 
+        </div>
+    </div>
+<% } else{%>
+    <div class="telegram-bot-container d-flex justify-content-center align-items-center">
+        <div>
+            <span>Телеграм-бот</span>
+        </div>
+        <div class="telegram-icon ml-3 d-flex justify-content-center align-items-center">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.8945 3.27393L13.65 13.8591C13.4805 14.606 13.039 14.792 12.4116 14.4403L8.99145 11.92L7.34138 13.5074C7.15863 13.6902 7.00617 13.8426 6.65395 13.8426L6.89992 10.3597L13.2383 4.63234C13.514 4.3869 13.1782 4.25037 12.8101 4.49634L4.97413 9.43059L1.6007 8.37446C0.86704 8.1455 0.853759 7.64081 1.7537 7.28859L14.9484 2.20506C15.5593 1.97609 16.0937 2.34053 15.8945 3.27393Z" fill="white"/>
+            </svg> 
+        </div>
+    </div>
+<% } %>
+
+<style>
+    .telegram-bot-container{
+        width: 220px;
+        height: 60px;
+        flex-shrink: 0; 
+        border-radius: 47px; 
+        box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.10);
+        background: white; 
+    }
+
+    .telegram-bot-container:active{
+        border-radius: 47px;
+        background: var(--f-3-fdfe, #F3FDFE);
+        box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.10), 2px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    }
+
+    .telegram-bot-container:hover{
+        background: var(--f-3-fdfe, #F3FDFE);
+        cursor: pointer;
+    }
+
+    .telegram-bot-container span{
+        color: #113B47;
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+    .telegram-icon{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: #113B47; 
+    }
+
+    .disabaled-telegram-ui-kit{
+        opacity: 0.5;
+        pointer-events: none !important;
+    }
+
+</style>
