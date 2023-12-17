@@ -34,7 +34,6 @@ img {
 }
 
 .text-block {
-  
   margin-bottom: 145px;
 }
 
@@ -114,21 +113,16 @@ blockquote::before {
   border-top: 0;
 }
 
-.card__item {
-  box-shadow: 2px 2px 8.5px 0px rgba(0, 0, 0, 0.1);
-  border: 0;
-  border-radius: 10px;
-}
-.card-title {
-  margin-right: auto !important;
-}
 
-.card-body {
-  display: flex;
-  align-items: center;
-}
 .avantages-text {
   margin-left: 30px;
+}
+.avantages-number-box{
+  height: 100px;
+  width: 15%;
+  min-width: 40px;
+  border-radius: 10% 100% 100% 10%;
+  background: #3A7E7F;
 }
 
 .plus {
@@ -295,7 +289,6 @@ blockquote::before {
   color: #FFF;
   font-family: Orchidea Pro;
   font-weight: 400;
-  margin-left: 20px;
 }
 
 .avantages-title {
@@ -344,6 +337,7 @@ blockquote::before {
   margin-right: 17px;
 }
 
+
 @media (max-width: 992px) {
   .quill {
     background-size: 30%
@@ -356,23 +350,19 @@ blockquote::before {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .card-title{
-    font-size: 20px ; 
+@media (max-width: 1200px) {
+    .card-title{
+      font-size: 20px ; 
+    }
+    .about {
+    height: 85em ;
+    }
+    .img-about {
+    width: 50% ;
   }
-  .about {
-  height: 85em ;
-  }
-  .img-about {
-  width: 50% ;
+
 }
 
-@media (max-width: 370px) {
-  .text-block button{
-    width: 100%;
-    max-width: none !important;
-  }
-}
 
 @media (min-width: 375px) and (max-width: 766px) {
   .card-title{
@@ -381,10 +371,33 @@ blockquote::before {
     }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 670px){
+  .license-title {
+    font-size: 40px;
+  }
+  
+}
+
+@media (max-width: 415px){
+  .license-title {
+    font-size: 25px;
+  }
+  
+}
+
+@media (max-width: 550px) {
   .price-text-body {
     padding: 0 ;
+  }
+  .price-text {
+    width: 60% ;
+    font-size: 15px ;
 }
+}
+
+@media (max-width: 375px) {
+  
 
   .card-title  {
     padding: 0 ;
@@ -392,35 +405,141 @@ blockquote::before {
   }
   .avantages__card {
     padding: 0 ;
-    height: 71px ;
   }
   .photos {
     margin-top: 70px ;
-}
-.price-text {
-    width: 78% ;
-    font-size: 15px ;
-}
-.price-span {
-    margin-left: 0 ;
-}
-.img-about {
-    width: 100% ;
-}
-.about {
+  }
+  
+  .price-span {
+      margin-left: 0 ;
+  }
+  .img-about {
+      width: 100% ;
+  }
+  .about {
     height: 94em ;
-    }
-    .photos {
+  }
+  .photos {
     margin-top: 100px ;
+  }
+  .custom-svg {
+      width: 50px ;
+      height: 70px ;
+  }
+  .span-avantages {
+      margin-left: 14px;
+  }
+  .card-title{
+    font-size: 11px ;
+  }
 }
-.custom-svg {
-    width: 50px ;
-    height: 70px ;
+
+@media (max-width: 1100px) {
+  .certificate-title h1{
+      font-size: 50px;
+  }
 }
-.span-avantages {
-    margin-left: 14px;
+
+@media (min-width: 992px) {
+  .button-certificate-xs{
+      display: none;
+  }
+
+  .button-certificate-lg{
+      display: block;
+  }
 }
-.card-title{
-  font-size: 11px ;
+
+@media (max-width: 992px) {
+  .button-certificate-xs{
+      display: block;
+  }
+
+  .button-certificate-lg{
+      display: none;
+  }
+
+  .main-form-background{
+      height: 800px; 
+      background-size: cover;
+      width: 100%;
+  }
+  .main-form{
+      transform:scaleX(-1);
+      padding-top: 200px;
+  }
 }
+
+@media (max-width: 768px) {
+  .main-form-title{
+      font-size: 36px;
+  }
 }
+
+@media (max-width: 460px) {
+  .certificate-title h1{
+      font-size: 25px;
+      
+  }
+
+  .cerficate-description p{
+      font-size: 16px; 
+  }
+  .main-form-title{
+      font-size: 25px !important;
+  }
+  .main-form-sended{
+      font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .text-block .button-text-block button{
+      width: 100%;
+      max-width: none !important;
+  }
+}
+
+@media(max-width: 576px){
+  .main-form-title{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .main-form-sended{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .main-form-alert{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .main-form-inputs{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .main-form-inputs input{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100% !important;
+  }
+  .main-form-contact{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .main-form-contact .button-meeting-ui-kit{
+      width:100%;
+      max-width: none;
+  }
+}
+

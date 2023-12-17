@@ -8,6 +8,11 @@
     text-transform: uppercase; 
 }
 
+.specialists-container .service-clinic-block button{
+    width: 100%;
+    max-width: none;
+}
+
 @media (max-width: 768px) {
     .specialist-button-prev{
         top: 110% !important;
@@ -18,9 +23,14 @@
         top: 110% !important;
         right: 35% !important;
     }
+
+    
 }
 
 @media (max-width: 480px) {
+    .specialists-title{
+        font-size: 25px; 
+    }
     .specialist-button-prev{
         left: 30% !important;
     }

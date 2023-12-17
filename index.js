@@ -7,15 +7,15 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "views")));
 
 app.get("/", function (req, res) {
-  res.render("pages/main");
+  res.render("pages/main", {page: 'main'});
 });
 
 app.get("/about", function (req, res) {
-  res.render("pages/about");
+  res.render("pages/about", {page: 'about'});
 });
 
 app.get("/services", function (req, res) {
-  res.render("pages/services");
+  res.render("pages/services", {page: 'services'});
 });
 
 app.get("/specialists", function (req, res) {
