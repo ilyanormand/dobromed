@@ -7,8 +7,11 @@
         
     </div> 
 <% } else if (type === 'pdf') { %>
-    <div class="card-service-photo-ui-kit" style="background-image: url('<%= imageUrl %>'); height: 518px;">
+    <!-- <div class="card-service-photo-ui-kit" style="background-image: url('<%= imageUrl %>'); height: 530px;">
 
+    </div> -->
+    <div class="card-service-photo-ui-kit card-service-licence">
+        <img src="<%= imageUrl %>"  class="img-fluidd">
     </div>
 <% } %>
 
@@ -22,10 +25,20 @@
         color: white;
         border-radius: 10px;
     }
-    @media (min-width: 375px) and (max-width: 1200px) {
-      .card-service-photo-ui-kit{
-        width: 100%;
-        height: 70%;
+
+    .card-service-licence{
+        height: auto;
     }
+    @media (min-width: 375px) and (max-width: 1200px) {
+        .card-service-photo-ui-kit{
+            width: 100%;
+            height: 70%;
+        }
+    }
+
+    @media(max-width: 410px){
+        .card-service-licence{
+            width: 100%;
+        }
     }
 </style>
